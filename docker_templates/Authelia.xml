@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>authelia</Name>
+  <Repository>authelia/authelia</Repository>
+  <Registry>https://hub.docker.com/r/authelia/authelia/</Registry>
+  <Network>swag</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/VWAG7rZ</Support>
+  <Project>https://github.com/authelia/authelia</Project>
+  <Overview>Authelia is an open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal. It acts as a companion of reverse proxies like nginx, Traefik or HAProxy to let them know whether queries should pass through. Instructions: https://github.com/ibracorp/authelia.&#xD;
+    Our docs can be found at https://docs.ibracorp.io</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:9091]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/authelia/authelia.xml</TemplateURL>
+  <Icon>https://i.imgur.com/DCn2yiv.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1649598904</DateInstalled>
+  <DonateText>Help support my work by buying me a beer</DonateText>
+  <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
+  <Requires/>
+  <Config Name="Authelia Web UI" Target="9091" Default="9091" Mode="tcp" Description="This is the Web UI Port, and is used to access the server gui." Type="Port" Display="always" Required="true" Mask="{8}">9091</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/Authelia" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/authelia/</Config>
+  <Config Name="Time Zone" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="traefik.enable" Target="traefik.enable" Default="true" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="traefik.http.routers.authelia.entryPoints" Target="traefik.http.routers.authelia.entryPoints" Default="https" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">https</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="PUID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="PGID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+</Container>

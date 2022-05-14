@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>CloudDrive</Name>
+  <Repository>cloudnas/clouddrive</Repository>
+  <Registry>https://hub.docker.com/r/cloudnas/clouddrive</Registry>
+  <Network>swag</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:9798]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/cloudreve/frontend/master/public/static/img/logo192.png</Icon>
+  <ExtraParams>--cap-add SYS_ADMIN --device /dev/fuse --security-opt apparmor:unconfine -v /mnt/user/clouddrive:/CloudNAS:shared</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1650011744</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="/Config" Target="/Config" Default="/mnt/user/appdata/clouddrive" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/clouddrive</Config>
+  <Config Name="WebUI" Target="9798" Default="9798" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">9798</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="GUID" Target="GUID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">022</Config>
+</Container>

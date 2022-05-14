@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>aria2</Name>
+  <Repository>p3terx/aria2-pro</Repository>
+  <Registry>https://hub.docker.com/r/p3terx/aria2-pro</Registry>
+  <Network>br0</Network>
+  <MyIP>10.10.10.4</MyIP>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/fanningert/unraid-docker-templates/master/fanningert/icons/aria2daemon.png</Icon>
+  <ExtraParams>--log-driver json-file --log-opt max-size=1m</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1652256123</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="RPC_SECRET" Target="RPC_SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">whb13907707741</Config>
+  <Config Name="Variable RPC PORT" Target="RPC_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">6800</Config>
+  <Config Name="Variable LISTEN_PORT" Target="LISTEN_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">6888</Config>
+  <Config Name="RPC_PORT" Target="6800" Default="6800" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">6800</Config>
+  <Config Name="LISTEN_PORT_TCP" Target="6888" Default="6888" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">6888</Config>
+  <Config Name="/config" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/aria2</Config>
+  <Config Name="/downloads" Target="/downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Downloads/aria2</Config>
+  <Config Name="DISK_CACHE" Target="DISK_CACHE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">512</Config>
+  <Config Name="IPV6_MODE" Target="IPV6_MODE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="SPECIAL_MODE" Target="SPECIAL_MODE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">move</Config>
+  <Config Name="CUSTOM_TRACKER_URL" Target="CUSTOM_TRACKER_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://trackerslist.com/all_aria2.txt</Config>
+  <Config Name="Variable UMASK_SET" Target="UMASK_SET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">022</Config>
+  <Config Name="LISTEN_PORT_UDP" Target="6888" Default="6888" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">6888</Config>
+  <Config Name="/completed" Target="/completed" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Downloads/completed</Config>
+</Container>
