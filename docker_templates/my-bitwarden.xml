@@ -43,13 +43,11 @@
   <DonateLink/>
   <Requires/>
   <Config Name="WebUI HTTP Port" Target="80" Default="4743" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">4743</Config>
-  <Config Name="SERVER_ADMIN_EMAIL" Target="SERVER_ADMIN_EMAIL" Default="me@domain.com" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">junbujian6216@gmail.com</Config>
+  <Config Name="SERVER_ADMIN_EMAIL" Target="SERVER_ADMIN_EMAIL" Default="me@domain.com" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="SIGNUPS_ALLOWED" Target="SIGNUPS_ALLOWED" Default="true|false" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="INVITATIONS_ALLOWED" Target="INVITATIONS_ALLOWED" Default="true|false" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="WEBSOCKET_ENABLED" Target="WEBSOCKET_ENABLED" Default="false" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
-  <Config Name="ADMIN_TOKEN" Target="ADMIN_TOKEN" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="true">wgv13907707741</Config>
+  <Config Name="ADMIN_TOKEN" Target="ADMIN_TOKEN" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="TimeZone" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
-  <Config Name="traefik.enable" Target="traefik.enable" Default="true" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">true</Config>
-  <Config Name="traefik.http.routers.bitwarden.entryPoints" Target="traefik.http.routers.bitwarden.entryPoints" Default="https" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">https</Config>
   <Config Name="Storage" Target="/data" Default="/mnt/user/appdata/vaultwarden" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/bitwarden/</Config>
 </Container>

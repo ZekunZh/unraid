@@ -23,6 +23,6 @@
   <Requires/>
   <Config Name="Redis Port" Target="6379" Default="6379" Mode="tcp" Description="Redis Port" Type="Port" Display="always" Required="true" Mask="false">6379</Config>
   <Config Name="ALLOW_EMPTY_PASSWORD" Target="ALLOW_EMPTY_PASSWORD" Default="yes|no" Mode="" Description="ALLOW_EMPTY_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false">no</Config>
-  <Config Name="Password" Target="REDIS_PASSWORD" Default="" Mode="" Description="If you want password put ALLOW_EMPTY_PASSWORD to no, then put the password here." Type="Variable" Display="always" Required="false" Mask="false">whb13907707741</Config>
+  <Config Name="Password" Target="REDIS_PASSWORD" Default="" Mode="" Description="If you want password put ALLOW_EMPTY_PASSWORD to no, then put the password here." Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Appdata" Target="/appdata" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/bitnami_redis</Config>
 </Container>

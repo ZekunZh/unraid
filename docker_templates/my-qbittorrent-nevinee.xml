@@ -24,7 +24,7 @@
   <Config Name="WEBUI_PORT" Target="WEBUI_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">8083</Config>
   <Config Name="WebUI" Target="8083" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8083</Config>
   <Config Name="/data" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/qbittorrent-nevinee</Config>
-  <Config Name="SCKEY" Target="SCKEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true">SCT16536Tyl5I2iuRbiRHpkt9gJEThNLO</Config>
+  <Config Name="SCKEY" Target="SCKEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"></Config>
   <Config Name="/downloads" Target="/downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Downloads/</Config>
   <Config Name="INSTALL_PYTHON" Target="INSTALL_PYTHON" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
   <Config Name="UMASK_SET" Target="UMASK_SET" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>

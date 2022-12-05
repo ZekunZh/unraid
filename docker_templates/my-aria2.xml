@@ -21,7 +21,7 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="RPC_SECRET" Target="RPC_SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">whb13907707741</Config>
+  <Config Name="RPC_SECRET" Target="RPC_SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="/config" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/aria2</Config>
   <Config Name="/downloads" Target="/downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Downloads/aria2/</Config>
   <Config Name="DISK_CACHE" Target="DISK_CACHE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">512</Config>
