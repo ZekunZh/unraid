@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>RustDeskServer</Name>
+  <Repository>rustdesk/rustdesk-server</Repository>
+  <Registry>https://hub.docker.com/r/rustdesk/rustdesk-server</Registry>
+  <Network>swag</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/125145-support-rustdesk-server</Support>
+  <Project>https://github.com/rustdesk/rustdesk-server</Project>
+  <Overview>Yet another remote desktop software, written in Rust. Works out of the box, no configuration required. You have full control of your data, with no concerns about security.</Overview>
+  <Category>Tools:Utilities Network:Web</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/JmzTaylor/unraid_templates/master/rustdesk-server.xml</TemplateURL>
+  <Icon>https://github.com/JmzTaylor/unraid_templates/raw/master/rustserver.png</Icon>
+  <ExtraParams>--no-healthcheck</ExtraParams>
+  <PostArgs>/usr/bin/hbbs</PostArgs>
+  <CPUset/>
+  <DateInstalled>1655899760</DateInstalled>
+  <DonateText>If you like my work please consider Donating.</DonateText>
+  <DonateLink>https://paypal.me/jmztaylor</DonateLink>
+  <Requires/>
+  <Config Name="Host Path 1" Target="/root" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/rustdesk-hbbs/</Config>
+  <Config Name="Host Port 1" Target="21115" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">21115</Config>
+  <Config Name="Host Port 2" Target="21116" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">21116</Config>
+  <Config Name="Host Port 3" Target="21116" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">21116</Config>
+  <Config Name="Host Port 4" Target="21118" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">21118</Config>
+</Container>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>embystat</Name>
+  <Repository>lscr.io/linuxserver/embystat</Repository>
+  <Registry>https://github.com/orgs/linuxserver/packages/container/package/embystat</Registry>
+  <Network>swag</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/linuxserver/docker-embystat/issues/new/choose</Support>
+  <Project>https://github.com/mregni/EmbyStat</Project>
+  <Overview>Embystat(https://github.com/mregni/EmbyStat) is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.</Overview>
+  <Category>MediaApp:Other MediaServer:Other</Category>
+  <WebUI>http://[IP]:[PORT:6555]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/embystat.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/embystat-logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1663558344</DateInstalled>
+  <DonateText>Donations</DonateText>
+  <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="6555" Default="6555" Mode="tcp" Description="web gui" Type="Port" Display="always" Required="true" Mask="false">6555</Config>
+  <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/embystat" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/embystat</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>

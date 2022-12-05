@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>librespeed</Name>
+  <Repository>lscr.io/linuxserver/librespeed</Repository>
+  <Registry>https://github.com/orgs/linuxserver/packages/container/package/librespeed</Registry>
+  <Network>swag</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/linuxserver/docker-librespeed/issues/new/choose</Support>
+  <Project>https://github.com/librespeed/speedtest</Project>
+  <Overview>Librespeed(https://github.com/librespeed/speedtest) is a very lightweight Speedtest implemented in Javascript, using XMLHttpRequest and Web Workers.&#xD;
+No Flash, No Java, No Websocket, No Bullshit.</Overview>
+  <Category>Tools:Utilities Network:Web</Category>
+  <WebUI>http://[IP]:[PORT:6680]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/librespeed.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/librespeed-logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1664161807</DateInstalled>
+  <DonateText>Donations</DonateText>
+  <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="web gui" Type="Port" Display="always" Required="true" Mask="false">6680</Config>
+  <Config Name="PASSWORD" Target="PASSWORD" Default="PASSWORD" Mode="{3}" Description="Set the password for the results database." Type="Variable" Display="always" Required="true" Mask="true">whb13907707741</Config>
+  <Config Name="CUSTOM_RESULTS" Target="CUSTOM_RESULTS" Default="false" Mode="{3}" Description="(optional) set to `true` to enable custom results page in `/config/www/results/index.php`." Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="DB_TYPE" Target="DB_TYPE" Default="sqlite" Mode="{3}" Description="Defaults to `sqlite`, can also be set to `mysql` or `postgresql`." Type="Variable" Display="always" Required="false" Mask="false">sqlite</Config>
+  <Config Name="DB_NAME" Target="DB_NAME" Default="DB_NAME" Mode="{3}" Description="Database name. Required for mysql and pgsql." Type="Variable" Display="always" Required="false" Mask="false">DB_NAME</Config>
+  <Config Name="DB_HOSTNAME" Target="DB_HOSTNAME" Default="DB_HOSTNAME" Mode="{3}" Description="Database address. Required for mysql and pgsql." Type="Variable" Display="always" Required="false" Mask="false">DB_HOSTNAME</Config>
+  <Config Name="DB_USERNAME" Target="DB_USERNAME" Default="DB_USERNAME" Mode="{3}" Description="Database username. Required for mysql and pgsql." Type="Variable" Display="always" Required="false" Mask="false">DB_USERNAME</Config>
+  <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="DB_PASSWORD" Mode="{3}" Description="Database password. Required for mysql and pgsql." Type="Variable" Display="always" Required="false" Mask="true">DB_PASSWORD</Config>
+  <Config Name="DB_PORT" Target="DB_PORT" Default="DB_PORT" Mode="{3}" Description="Database port. Required for mysql." Type="Variable" Display="always" Required="false" Mask="false">DB_PORT</Config>
+  <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/librespeed" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/librespeed</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>

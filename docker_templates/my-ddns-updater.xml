@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ddns-updater</Name>
+  <Repository>qmcgaw/ddns-updater</Repository>
+  <Registry>https://hub.docker.com/r/qmcgaw/ddns-updater#configuration</Registry>
+  <Network>swag</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/DiamondPrecisionComputing/unraid-templates/main/templates/img/ddnsgopher.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1660200746</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="web" Target="8000" Default="8000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+  <Config Name="config" Target="/updater/data" Default="/mnt/user/appdata/ddns-updater/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ddns/</Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="PUBLICIP_FETCHERS" Target="PUBLICIP_FETCHERS" Default="http" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http</Config>
+  <Config Name="PUBLICIP_HTTP_PROVIDERS" Target="PUBLICIP_HTTP_PROVIDERS" Default="https://ifconfig.io/ip" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://ifconfig.io/ip</Config>
+  <Config Name="PUBLICIPV4_HTTP_PROVIDERS" Target="PUBLICIPV4_HTTP_PROVIDERS" Default="https://ifconfig.io/ip" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://ifconfig.io/ip</Config>
+  <Config Name="PUBLICIPV6_HTTP_PROVIDERS" Target="PUBLICIPV6_HTTP_PROVIDERS" Default="https://ifconfig.io/ip" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://ifconfig.io/ip</Config>
+  <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="debug" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">debug</Config>
+  <Config Name="LOG_CALLER" Target="LOG_CALLER" Default="short" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">short</Config>
+  <Config Name="UID" Target="UID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
+  <Config Name="GID" Target="GID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
+</Container>

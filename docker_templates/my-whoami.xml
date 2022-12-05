@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>whoami</Name>
+  <Repository>traefik/whoami</Repository>
+  <Registry>https://hub.docker.com/r/traefik/whoami</Registry>
+  <Network>swag</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/traefik/whoami</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:2001]</WebUI>
+  <TemplateURL/>
+  <Icon>https://user-images.githubusercontent.com/59175356/160829133-b140e801-8e1e-4255-9277-7ab05ae3640d.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1662995717</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WHOAMI_PORT_NUMBER" Target="WHOAMI_PORT_NUMBER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">2001</Config>
+  <Config Name="2001" Target="2001" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">2001</Config>
+  <Config Name="traefik.enable" Target="traefik.enable" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="traefik.http.routers.whoami.entryPoints" Target="traefik.http.routers.whoami.entryPoints" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">https</Config>
+  <Config Name="traefik.http.services.whoami.loadbalancer.server.port" Target="traefik.http.services.whoami.loadbalancer.server.port" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">2001</Config>
+</Container>

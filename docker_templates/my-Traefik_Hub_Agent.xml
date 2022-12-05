@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Traefik_Hub_Agent</Name>
+  <Repository>ghcr.io/traefik/hub-agent-traefik:latest</Repository>
+  <Registry/>
+  <Network>swag</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams>--pull=always --restart="on-failure"</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1661012253</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="DOCKER_HOST" Target="DOCKER_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">dockersocket</Config>
+</Container>

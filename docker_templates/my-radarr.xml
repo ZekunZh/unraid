@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>radarr</Name>
+  <Repository>hotio/radarr:nightly-579b825</Repository>
+  <Registry>https://hub.docker.com/r/hotio/radarr</Registry>
+  <Network>swag</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hotio.dev/discord</Support>
+  <Project>https://hotio.dev/containers/radarr</Project>
+  <Overview>Radarr is an independent fork of Sonarr reworked for automatically downloading movies via Usenet and BitTorrent.</Overview>
+  <Category>Downloaders: MediaApp:Video</Category>
+  <WebUI>http://[IP]:[PORT:7878]</WebUI>
+  <TemplateURL/>
+  <Icon>https://hotio.dev/webhook-avatars/radarr.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1667237518</DateInstalled>
+  <DonateText>You can become a GitHub sponsor, use Open Collective or send some Crypto...</DonateText>
+  <DonateLink>https://hotio.dev/donate</DonateLink>
+  <Requires/>
+  <Config Name="Host Port for 7878" Target="7878" Default="7878" Mode="tcp" Description="" Type="Port" Display="always-hide" Required="true" Mask="false">7878</Config>
+  <Config Name="Host Path for /config" Target="/config" Default="/mnt/user/appdata/radarr-1" Mode="rw" Description="" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/radarr</Config>
+  <Config Name="traefik.enable" Target="traefik.enable" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="traefik.http.routers.radarr.entryPoints" Target="traefik.http.routers.radarr.entryPoints" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https</Config>
+  <Config Name="/data" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Downloads/</Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="traefik.enable" Target="traefik.enable" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="traefik.http.routers.radarr.entryPoints" Target="traefik.http.routers.radarr.entryPoints" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">https</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="002" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">002</Config>
+</Container>

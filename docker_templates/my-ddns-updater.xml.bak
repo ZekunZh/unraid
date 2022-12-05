@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ddns-updater</Name>
+  <Repository>qmcgaw/ddns-updater</Repository>
+  <Registry>https://hub.docker.com/r/qmcgaw/ddns-updater#configuration</Registry>
+  <Network>swag</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/DiamondPrecisionComputing/unraid-templates/main/templates/img/ddnsgopher.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1647785597</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>swag</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8000</HostPort>
+        <ContainerPort>8000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ddns-updater/</HostDir>
+      <ContainerDir>/updater/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>Asia/Shanghai</Value>
+      <Name>TZ</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>http</Value>
+      <Name>PUBLICIP_FETCHERS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://ifconfig.io/ip</Value>
+      <Name>PUBLICIP_HTTP_PROVIDERS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://ifconfig.io/ip</Value>
+      <Name>PUBLICIPV4_HTTP_PROVIDERS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://ifconfig.io/ip</Value>
+      <Name>PUBLICIPV6_HTTP_PROVIDERS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>debug</Value>
+      <Name>LOG_LEVEL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>short</Value>
+      <Name>LOG_CALLER</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="web" Target="8000" Default="8000" Mode="tcp" Description="Container Port: 8000" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+  <Config Name="config" Target="/updater/data" Default="/mnt/user/appdata/ddns-updater/" Mode="rw" Description="Container Path: /updater/data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ddns-updater/</Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="PUBLICIP_FETCHERS" Target="PUBLICIP_FETCHERS" Default="http" Mode="" Description="Container Variable: PUBLICIP_FETCHERS" Type="Variable" Display="always" Required="false" Mask="false">http</Config>
+  <Config Name="PUBLICIP_HTTP_PROVIDERS" Target="PUBLICIP_HTTP_PROVIDERS" Default="https://ifconfig.io/ip" Mode="" Description="Container Variable: PUBLICIP_HTTP_PROVIDERS" Type="Variable" Display="always" Required="false" Mask="false">https://ifconfig.io/ip</Config>
+  <Config Name="PUBLICIPV4_HTTP_PROVIDERS" Target="PUBLICIPV4_HTTP_PROVIDERS" Default="https://ifconfig.io/ip" Mode="" Description="Container Variable: PUBLICIPV4_HTTP_PROVIDERS" Type="Variable" Display="always" Required="false" Mask="false">https://ifconfig.io/ip</Config>
+  <Config Name="PUBLICIPV6_HTTP_PROVIDERS" Target="PUBLICIPV6_HTTP_PROVIDERS" Default="https://ifconfig.io/ip" Mode="" Description="Container Variable: PUBLICIPV6_HTTP_PROVIDERS" Type="Variable" Display="always" Required="false" Mask="false">https://ifconfig.io/ip</Config>
+  <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="debug" Mode="" Description="Container Variable: LOG_LEVEL" Type="Variable" Display="always" Required="false" Mask="false">debug</Config>
+  <Config Name="LOG_CALLER" Target="LOG_CALLER" Default="short" Mode="" Description="Container Variable: LOG_CALLER" Type="Variable" Display="always" Required="false" Mask="false">short</Config>
+</Container>

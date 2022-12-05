@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>DiskSpeed</Name>
+  <Repository>jbartlett777/diskspeed</Repository>
+  <Registry>https://hub.docker.com/r/jbartlett777/diskspeed/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://forums.unraid.net/topic/70636-diskspeed</Support>
+  <Project/>
+  <Overview>Display drives attached to controllers and perform benchmark speed tests. Performing the occasional benchmark will help you determine if a drive is starting to fail even if the SMART logic isn't flagging errors as of yet. Privileged mode is required for this application to function and see the storage controllers &amp;amp; drives attached to the host machine.</Overview>
+  <Category>Tools:Utilities spotlight:</Category>
+  <WebUI>http://[IP]:[PORT:8888]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/jbartlett777/DiskSpeed/master/DiskSpeed.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/jbartlett777/DiskSpeed/master/DiskSpeed.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1658487613</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Web Port" Target="8888" Default="18888" Mode="tcp" Description="Host Port used to access the DiskSpeed web site." Type="Port" Display="always-hide" Required="true" Mask="false">18888</Config>
+  <Config Name="Local Storage" Target="/tmp/DiskSpeed" Default="" Mode="rw" Description="External storage location to store persistent data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/DiskSpeed/</Config>
+  <Config Name="unRAID ini Files" Target="/var/local/emhttp" Default="/var/local/emhttp" Mode="ro" Description="Location of unRAID ini files" Type="Path" Display="advanced-hide" Required="false" Mask="false">/var/local/emhttp</Config>
+</Container>

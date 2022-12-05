@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>binhex-prowlarr</Name>
+  <Repository>binhex/arch-prowlarr</Repository>
+  <Registry>https://registry.hub.docker.com/r/binhex/arch-prowlarr/</Registry>
+  <Network>swag</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/111682-support-binhex-prowlarr/</Support>
+  <Project>https://github.com/Prowlarr/Prowlarr</Project>
+  <Overview>Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps. Prowlarr supports both Torrent Trackers and Usenet Indexers. It integrates seamlessly with Sonarr, Radarr, Lidarr, and Readarr offering complete management of your indexers with no per app Indexer setup required.</Overview>
+  <Category>Downloaders: MediaApp:Video</Category>
+  <WebUI>http://[IP]:[PORT:9696]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/prowlarr.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/prowlarr-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1668275245</DateInstalled>
+  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
+  <Requires/>
+  <Config Name="Host Port 1" Target="9696" Default="9696" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">9696</Config>
+  <Config Name="Key 1" Target="UMASK" Default="000" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">022</Config>
+  <Config Name="Key 2" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Key 3" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/binhex-prowlarr" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/prowlarr</Config>
+</Container>
