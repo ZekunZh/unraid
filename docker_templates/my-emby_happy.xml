@@ -1,38 +1,36 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>emby_happy</Name>
-  <Repository>lovechen/embyserver:latest</Repository>
-  <Registry>https://gitee.com/jackiewuu/unraid/raw/master/docker_templates/icon/Emby.png</Registry>
-  <Network>bridge</Network>
-  <MyIP/>
-  <Shell>bash</Shell>
-  <Privileged>false</Privileged>
-  <Support>https://github.com/linuxserver/docker-emby/issues/new/choose</Support>
-  <Project>https://emby.media/</Project>
-  <Overview>Emby &#x7279;&#x522B;&#x7248;&#xFF0C;&#x53EF;&#x76F4;&#x63A5;&#x5F00;&#x542F;&#x786C;&#x89E3;&#x3002;&#xD;
-&#x5982;&#x9700;&#x534F;&#x52A9;&#xFF0C;&#x8BF7;&#x5FAE;&#x4FE1;&#x8054;&#x7CFB;&#xFF1A;jackiewuuu&#x3002;</Overview>
-  <Category/>
-  <WebUI>http://[IP]:[PORT:8096]</WebUI>
-  <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emby-logo.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1661583705</DateInstalled>
-  <DonateText>Donations</DonateText>
-  <DonateLink>https://www.linuxserver.io/donate</DonateLink>
-  <Requires/>
-  <Config Name="WebUI" Target="8096" Default="8096" Mode="tcp" Description="Http webUI." Type="Port" Display="always" Required="true" Mask="false">8096</Config>
-  <Config Name="Port: 8920" Target="8920" Default="8920" Mode="tcp" Description="Https webUI (you need to setup your own certificate)." Type="Port" Display="always" Required="false" Mask="false">8920</Config>
-  <Config Name="1900" Target="1900" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">1900</Config>
-  <Config Name="7359" Target="7359" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">7359</Config>
-  <Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="/transcode" Target="/transcode" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/emby/transcode</Config>
-  <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/emby" Mode="rw" Description="Emby data storage location. *This can grow very large, 50gb+ is likely for a large collection.*" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/emby</Config>
-  <Config Name="UID" Target="UID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
-  <Config Name="GID" Target="GID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
-  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
-  <Config Name="GIDLIST" Target="GIDLIST" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">0</Config>
-  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">Asia/Shanghai</Config>
-  <Config Name="/dev/dri" Target="{1}" Default="/dev/dri" Mode="" Description="Only needed if you want to use your Intel or AMD GPU for hardware accelerated video encoding (vaapi)." Type="Device" Display="advanced-hide" Required="false" Mask="false">/dev/dri</Config>
-</Container>
+	<Name>emby</Name>
+	<Repository>lovechen/embyserver:latest</Repository>
+	<Registry>https://gitee.com/jackiewuu/unraid/raw/master/docker_templates/icon/Emby.png</Registry>
+	<Network>bridge</Network>
+	<MyIP/>
+	<Shell>bash</Shell>
+	<Privileged>false</Privileged>
+	<Support>https://github.com/linuxserver/docker-emby/issues/new/choose</Support>
+	<Project>https://emby.media/</Project>
+	<Overview>Emby 特别版，可直接开启硬解。 如需协助，请微信联系：jackiewuuu。</Overview>
+	<Category/>
+	<WebUI>http://[IP]:[PORT:8096]</WebUI>
+	<TemplateURL/>
+	<Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emby-logo.png</Icon>
+	<ExtraParams/>
+	<PostArgs/>
+	<CPUset/>
+	<DateInstalled>1672647147</DateInstalled>
+	<DonateText>Donations</DonateText>
+	<DonateLink>https://www.linuxserver.io/donate</DonateLink>
+	<Requires/>
+	<Config Name="WebUI" Target="8096" Default="8096" Mode="tcp" Description="Http webUI." Type="Port" Display="always" Required="true" Mask="false">8096</Config>
+	<Config Name="Port: 8920" Target="8920" Default="8920" Mode="tcp" Description="Https webUI (you need to setup your own certificate)." Type="Port" Display="always" Required="false" Mask="false">8920</Config>
+	<Config Name="1900" Target="1900" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">1900</Config>
+	<Config Name="7359" Target="7359" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">7359</Config>
+	<Config Name="Path: /media" Target="/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/</Config>
+	<Config Name="/transcode" Target="/transcode" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/emby/transcode</Config>
+	<Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+	<Config Name="核显" Target="" Default="" Mode="" Description="" Type="Device" Display="always" Required="false" Mask="false">/dev/dri</Config>
+	<Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/emby" Mode="rw" Description="Emby data storage location. *This can grow very large, 50gb+ is likely for a large collection.*" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/emby</Config>
+	<Config Name="UID" Target="UID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+	<Config Name="GID" Target="GID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+	<Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+<Container/>
