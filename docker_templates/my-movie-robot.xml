@@ -27,7 +27,7 @@ https://hub.docker.com/r/yipengfei/movie-robot/</Overview>
   <Requires/>
   <Config Name="Config Files" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/movie-robot</Config>
   <Config Name="WebUI" Target="1329" Default="1329" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">1329</Config>
-  <Config Name="Container Variable 8" Target="LICENSE_KEY" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">3vQyOplktqcDT1x9bIOphssJrtcXQResrxuaKSYlFVhPDv5ftN7DTdMEIZrWaEerNZ1Vr2xSgOuDAWidGF3uQDXvsGXDtmFcjWtpMKfHeRAnkoghThDywZW2RreeBWBE</Config>
+  <Config Name="Container Variable 8" Target="LICENSE_KEY" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="/media" Target="/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Downloads/</Config>
   <Config Name="PGID" Target="PGID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
   <Config Name="PUID" Target="PUID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
