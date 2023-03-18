@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>NasTools</Name>
+  <Name>nastool-test</Name>
   <Repository>19970688/nastools-bt</Repository>
   <Registry>https://hub.docker.com/r/jxxghp/nas-tools</Registry>
-  <Network>Bridge</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support>http://lime-technology.com/forum/index.php?topic=45838.0</Support>
   <Project>https://github.com/jxxghp/nas-tools</Project>
-  <Overview></Overview>
+  <Overview/>
   <Category>Cloud: Network:Web Tools:</Category>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/shuosiw/unraid/master/NasTools.xml</TemplateURL>
@@ -17,7 +17,7 @@
   <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1669134445</DateInstalled>
+  <DateInstalled>1679161681</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
