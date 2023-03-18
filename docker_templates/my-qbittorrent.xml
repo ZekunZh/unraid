@@ -21,12 +21,12 @@
   <DonateText>Donations</DonateText>
   <DonateLink>https://www.linuxserver.io/donate</DonateLink>
   <Requires/>
-  <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="网页界面端口" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
-  <Config Name="Port: 6881" Target="6881" Default="6881" Mode="tcp" Description="TCP BT 下载端口 " Type="Port" Display="always" Required="true" Mask="false">6881</Config>
-  <Config Name="Port: 6881" Target="6881" Default="6881" Mode="udp" Description="UDP BT 下载端口" Type="Port" Display="always" Required="true" Mask="false">6881</Config>
-  <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="下载路径映射" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/</Config>
-  <Config Name="WEBUI_PORT" Target="WEBUI_PORT" Default="8080" Mode="{3}" Description="网页端口变量，需要与上面的网页端口号一致" Type="Variable" Display="always" Required="true" Mask="false">8080</Config>
-  <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/qbittorrent" Mode="rw" Description="QB配置文件保存路径，使用这里的默认值即可" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/qbittorrent</Config>
+  <Config Name="网页界面 WebUI" Target="8080" Default="8080" Mode="tcp" Description="网页界面端口" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="BT下载端口 - TCP" Target="6881" Default="6881" Mode="tcp" Description="TCP BT 下载端口 " Type="Port" Display="always" Required="true" Mask="false">6881</Config>
+  <Config Name="BT下载端口 - UDP" Target="6881" Default="6881" Mode="udp" Description="UDP BT 下载端口" Type="Port" Display="always" Required="true" Mask="false">6881</Config>
+  <Config Name="下载路径" Target="/downloads" Default="" Mode="rw" Description="下载路径映射" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/</Config>
+  <Config Name="网页端口变量" Target="WEBUI_PORT" Default="8080" Mode="{3}" Description="网页端口变量，需要与上面的网页端口号一致" Type="Variable" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="配置文件" Target="/config" Default="/mnt/user/appdata/qbittorrent" Mode="rw" Description="QB配置文件保存路径，使用这里的默认值即可" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/qbittorrent</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
   <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">002</Config>
