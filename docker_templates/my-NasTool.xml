@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>nastool-test</Name>
+  <Name>Nastool</Name>
   <Repository>19970688/nastools-bt</Repository>
   <Registry>https://hub.docker.com/r/jxxghp/nas-tools</Registry>
   <Network>bridge</Network>
