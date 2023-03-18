@@ -14,10 +14,10 @@
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/shuosiw/unraid/master/NasTools.xml</TemplateURL>
   <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Nas-tool.png</Icon>
-  <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
+  <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1679161681</DateInstalled>
+  <DateInstalled>1679162061</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
