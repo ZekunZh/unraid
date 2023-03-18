@@ -9,13 +9,7 @@
   <Privileged>false</Privileged>
   <Support>http://lime-technology.com/forum/index.php?topic=45838.0</Support>
   <Project>https://github.com/jxxghp/nas-tools</Project>
-  <Overview>&#x5E94;&#x7528;&#x4ECB;&#x7ECD;&#xD;
-NasTools &#x662F;&#x4E00;&#x4E2A; NAS &#x5A92;&#x4F53;&#x5E93;&#x8D44;&#x6E90;&#x5F52;&#x96C6;&#x6574;&#x7406;&#x5DE5;&#x5177;&#x3002;&#xD;
-&#x6587;&#x6863;&#x4ECB;&#x7ECD;&#xD;
-https://github.com/jxxghp/nas-tools/wiki&#xD;
-&#xD;
-&#xD;
-  </Overview>
+  <Overview></Overview>
   <Category>Cloud: Network:Web Tools:</Category>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/shuosiw/unraid/master/NasTools.xml</TemplateURL>
