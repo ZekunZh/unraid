@@ -23,7 +23,6 @@ https://github.com/jxxghp/nas-tools/wiki&#xD;
   <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <Network>bridge</Network>
   <DateInstalled>1669134445</DateInstalled>
   <DonateText/>
   <DonateLink/>
