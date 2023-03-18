@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>jellyfin-nyanmisaka</Name>
+  <Name>jellyfin</Name>
   <Repository>nyanmisaka/jellyfin:latest</Repository>
   <Registry>https://hub.docker.com/r/nyanmisaka/jellyfin</Registry>
   <Network>bridge</Network>
