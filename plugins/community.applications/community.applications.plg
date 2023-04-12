@@ -2,17 +2,83 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "community.applications">
 <!ENTITY author    "Andrew Zawadzki">
-<!ENTITY version   "2022.10.16">
-<!ENTITY md5       "822dc35ab3b2aea186bbe4647fddc0ac">
+<!ENTITY version   "2023.03.11">
+<!ENTITY md5       "07710453ff204cdacbcaaa974611923c">
 <!ENTITY launch    "Apps">
 <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
 <!ENTITY github    "Squidly271/community.applications">
-<!ENTITY pluginURL "https://gitee.com/jackiewuu/unraid/raw/master/plugins/community.applications/community.applications.plg">
+<!ENTITY pluginURL "https://raw.githubusercontent.com/&github;/master/plugins/&name;.plg">
 ]>
 
-<PLUGIN name="&name;" author="&author;" version="&version;" launch="&launch;" pluginURL="&pluginURL;" min="6.9.0" support="https://lime-technology.com/forums/topic/38582-plug-in-community-applications/" icon="users">
+<PLUGIN name="&name;" author="&author;" version="&version;" launch="&launch;" pluginURL="&pluginURL;" min="6.9.0" support="https://forums.unraid.net/topic/38582-plug-in-community-applications" icon="users">
 
 <CHANGES>
+###2023.03.11
+- PHP 8 Upgrades
+
+###2023.03.03
+- PHP8 Upgrades
+
+###2023.02.25
+- PHP8 Upgrades
+
+###2023.02.17
+- Dismissable AC banner warning
+
+###2023.02.16
+- PHP8 Upgrades
+- Added: Treat developer profile pics as a screenshot (click and zoom)
+- Added: ~20% less memory usage if developer mode isn't set in Settings
+- Added: Popup if memory installed does not meet CA's (and the OS's) published minimum
+
+###2023.01.28
+- Fixed: Don't allow dockerHub searches if the initial CYA disclaimer was dismissed
+- Fixed: Exceeded PHP memory limit when displaying template errors in Statistics
+- Fixed: Run on sentences displayed when displaying multiple note on the sidebar
+- Fixed: Privileged warning could appear twice in the sidebar
+- Fixed: Many / most applications would fail to display the correct last updated time in the sidebar
+- Fixed: Setting a favourite repository wouldn't display the hearts until a refresh of the page
+- Updated: Copyright
+- Code Cleanup
+- Updated: PHP8 compliance
+- Maybe fixed: On occasion Home would be highlighted under certain circumstances
+
+###2022.12.29
+- Fixed: Private App Category was not displaying
+- Fixed: First load of Apps after a application feed download would result in system thinking no docker apps installed
+
+###2022.12.28
+- Fixed: PHP8 compliance
+- Changed: Debugging banner enabled now will auto-hide
+- Fixed: v1 only templates were getting an extra invalid entry
+- Added: Better error handling for I/O errors
+- Added: Increase memory limit to 256M
+- Fixed: Prevent possible inifinit loop happening on a background task
+- Fixed: Under certain circumstances possible for CA to think a feed update was downloaded even though it wasn't
+- Fixed: Unraid version in debugging logs could be incorrect
+- Fixed: Feed would redownload every time entering in the apps tab
+- Changed: Always display Maintainer and Repo Name on a plugin's sidebar
+- Fixed: Don't process click events on menu items if onclick attribute present
+- Fixed: On occasion the first click to open a side bar could wind up with an empty sidebar
+- Fixed: Install comments popup could have a display aberration in the text under certain circumstances
+- Changed: More memory usage optimizations
+
+###2022.12.03
+- Fixed: Initial PHP8 compliance
+- Fixed: Don't process menu click events if onclick present
+- Code cleanup
+- Fixed: Infinite loop on sidebar possible in extremely unlikely set of circumstances
+- Changed: Don't redisplay Action Centre enabled banner after installing if it was already enabled
+- Fixed: Display aberration on "Requires" popup when installing from the card if a number was preceded by a space
+- Fixed: Display aberration on Repository cards
+- Fixed: On occasion, side bar would be empty or not populated correctly
+- Fixed: Action Centre would always get enabled if Docker Folder fork was installed
+- Changed: Significantly less memory usage
+
+###2022.11.11
+- Fixed: Loading sidebar on Papermerge twice would exhaust memory
+- Fixed: Uncategorized applications would not appear within "Other" category
+
 ###2022.10.16
 - Fixed: Check for updates (via Installed Apps) also checked for OS updates
 - Enhanced: Update plugin support URLs (if necessary) whenever application feed downloaded
@@ -2046,14 +2112,14 @@ mkdir -p /boot/config/plugins/community.applications
 rm -rf /usr/local/emhttp/plugins/community.applications/CA.page
 echo ""
 # Adjust icon depending on unRaid version
-echo "Adjusting icon for unRaid version"
+echo "Adjusting icon for Unraid version"
 if [[ -e /usr/local/emhttp/plugins/dynamix/styles/font-cases.ttf ]]; then sed -i 's/f0db/e942/g' /usr/local/emhttp/plugins/community.applications/Apps.page; fi
 if [[ ! -e /usr/local/emhttp/plugins/dynamix/styles/font-cases.ttf ]]; then sed -i 's/e942/f0db/g' /usr/local/emhttp/plugins/community.applications/Apps.page; fi
 
 echo ""
 echo "----------------------------------------------------"
 echo " &name; has been installed."
-echo " Copyright 2015-2022, Andrew Zawadzki"
+echo " Copyright 2015-2023, Andrew Zawadzki"
 echo " Version: &version;"
 echo "----------------------------------------------------"
 echo ""
