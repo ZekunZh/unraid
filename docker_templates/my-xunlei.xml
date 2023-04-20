@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>xunlei</Name>
+  <Repository>cnk3x/xunlei:latest</Repository>
+  <Registry>https://hub.docker.com/r/cnk3x/xunlei</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:2345]</WebUI>
+  <TemplateURL/>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Xunlei_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1681976216</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="/xunlei/data" Target="/xunlei/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/xunlei</Config>
+  <Config Name="/xunlei/downloads" Target="/xunlei/downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/dsm/&#x8FC5;&#x96F7;/</Config>
+  <Config Name="XL_WEB_PORT" Target="XL_WEB_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">2345</Config>
+  <Config Name="UID" Target="UID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="GID" Target="GID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="2345" Target="2345" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">2345</Config>
+  <Config Name="XL_DEBUG" Target="XL_DEBUG" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+</Container>
