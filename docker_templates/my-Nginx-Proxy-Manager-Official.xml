@@ -19,7 +19,7 @@ changeme</Overview>
   <Category>Tools:Utilities Other: Network:Web Network:Proxy Network:Management Network:Other</Category>
   <WebUI>http://[IP]:[PORT:81]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/mgutt/unraid-docker-templates/master/mgutt/Nginx-Proxy-Manager-Official.xml</TemplateURL>
-  <Icon>https://nginxproxymanager.com/icon.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Nginxproxymanager.png</Icon>
   <ExtraParams>--memory=1G --no-healthcheck</ExtraParams>
   <PostArgs/>
   <CPUset/>
