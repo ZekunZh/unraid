@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>qbittorrent-bot</Name>
+  <Repository>0one2/qbittorrent-bot</Repository>
+  <Registry/>
+  <Network>swag</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/zeroone2numeral2/qbittorrent-bot</Support>
+  <Project>https://github.com/zeroone2numeral2/qbittorrent-bot</Project>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/telegram.png</Icon>
+  <ExtraParams>-v /mnt/addons/appdata/qbittorrent-bot/config.toml:/app/config.toml</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1683398117</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+</Container>
