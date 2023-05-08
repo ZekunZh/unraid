@@ -3,7 +3,7 @@
   <Name>filebrowser</Name>
   <Repository>80x86/filebrowser</Repository>
   <Registry/>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -12,12 +12,11 @@
   <Overview/>
   <Category/>
   <WebUI>http://[IP]:8082/files</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/UnRAIDES/templates-UnRAID/master/templates/FileBrowser.xml</TemplateURL>
-  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/docker_templates/icon/Filebrowser.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Filebrowser.png</Icon>
   <ExtraParams>--device=/dev/dri</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1662995624</DateInstalled>
+  <DateInstalled>1683532651</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -28,9 +27,7 @@
   <Config Name="WEB_PORT" Target="WEB_PORT" Default="8082" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">8082</Config>
   <Config Name="FB_AUTH_SERVER_ADDR" Target="FB_AUTH_SERVER_ADDR" Default="127.0.0.1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">127.0.0.1</Config>
   <Config Name="FB_BASEURL" Target="FB_BASEURL" Default="/" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/</Config>
-  <Config Name="traefik.http.routers.filebrowser.entryPoints" Target="traefik.http.routers.filebrowser.entryPoints" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">https</Config>
-  <Config Name="traefik.enable" Target="traefik.enable" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Default nobody user of UnRAID" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Default users group of UnRAID" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
-  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">000</Config>
 </Container>
