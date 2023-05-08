@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
-	<Name>emby</Name>
+	<Name>emby-happy</Name>
 	<Repository>lovechen/embyserver:latest</Repository>
-	<Registry>https://gitee.com/jackiewuu/unraid/raw/master/docker_templates/icon/Emby.png</Registry>
+	<Registry>https://gitee.com/jackiewuu/unraid/raw/master/icon/Emby.png</Registry>
 	<Network>bridge</Network>
 	<MyIP/>
 	<Shell>bash</Shell>
@@ -13,13 +13,13 @@
 	<Category/>
 	<WebUI>http://[IP]:[PORT:8096]</WebUI>
 	<TemplateURL/>
-	<Icon>https://gitee.com/jackiewuu/unraid/raw/master/docker_templates/icon/Emby.png</Icon>
+	<Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Emby.png</Icon>
 	<ExtraParams/>
 	<PostArgs/>
 	<CPUset/>
 	<DateInstalled>1672647147</DateInstalled>
 	<DonateText>Donations</DonateText>
-	<DonateLink>https://www.linuxserver.io/donate</DonateLink>
+	<DonateLink></DonateLink>
 	<Requires/>
 	<Config Name="WebUI" Target="8096" Default="8096" Mode="tcp" Description="Http webUI." Type="Port" Display="always" Required="true" Mask="false">8096</Config>
 	<Config Name="Port: 8920" Target="8920" Default="8920" Mode="tcp" Description="Https webUI (you need to setup your own certificate)." Type="Port" Display="always" Required="false" Mask="false">8920</Config>
