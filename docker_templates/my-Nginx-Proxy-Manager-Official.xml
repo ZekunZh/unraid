@@ -17,13 +17,13 @@ admin@example.com&#xD;
 Password:&#xD;
 changeme</Overview>
   <Category>Tools:Utilities Other: Network:Web Network:Proxy Network:Management Network:Other</Category>
-  <WebUI>http://[IP]:[PORT:81]</WebUI>
+  <WebUI>http://[IP]:[PORT:811]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/mgutt/unraid-docker-templates/master/mgutt/Nginx-Proxy-Manager-Official.xml</TemplateURL>
-  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Nginxproxymanager.png</Icon>
+  <Icon>https://nginxproxymanager.com/icon.png</Icon>
   <ExtraParams>--memory=1G --no-healthcheck</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1682255739</DateInstalled>
+  <DateInstalled>1683534355</DateInstalled>
   <DonateText>If you like my work please consider Donating.</DonateText>
   <DonateLink>https://www.paypal.me/marcgutt</DonateLink>
   <Requires/>
