@@ -3,7 +3,7 @@
   <Name>CloudDrive</Name>
   <Repository>cloudnas/clouddrive</Repository>
   <Registry>https://hub.docker.com/r/cloudnas/clouddrive</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -13,8 +13,8 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:9798]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/cloudreve/frontend/master/public/static/img/logo192.png</Icon>
-  <ExtraParams>--cap-add SYS_ADMIN --device /dev/fuse --security-opt apparmor:unconfined -v /mnt/user/sftpgo:/CloudNAS:shared</ExtraParams>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Clouddrive.png</Icon>
+  <ExtraParams>--cap-add SYS_ADMIN --device /dev/fuse --security-opt apparmor:unconfined -v /mnt/user/:/CloudNAS:shared</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1656431087</DateInstalled>

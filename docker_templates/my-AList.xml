@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>AList</Name>
+  <Name>Alist</Name>
   <Repository>xhofe/alist:latest</Repository>
   <Registry>https://hub.docker.com/r/xhofe/alist</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -15,7 +15,7 @@ Important: Initial password in the log.</Overview>
   <Category/>
   <WebUI>http://[IP]:[PORT:5244]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/MyFaith/unraid-templates/master/alist/alist.xml</TemplateURL>
-  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/docker_templates/icon/Alist.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Alist.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
@@ -24,6 +24,6 @@ Important: Initial password in the log.</Overview>
   <DonateLink/>
   <Requires/>
   <Config Name="Web UI Port" Target="5244" Default="5244" Mode="tcp" Description="Web UI Port: 5244" Type="Port" Display="always" Required="false" Mask="false">5244</Config>
-  <Config Name="Data Path" Target="/mnt/data" Default="" Mode="rw" Description="Mount at /mnt/data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/clouddrive/</Config>
+  <Config Name="Data Path" Target="/mnt/data" Default="" Mode="rw" Description="Mount at /mnt/data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
   <Config Name="Data Path" Target="/opt/alist/data" Default="" Mode="rw" Description="Appdata Path" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/alist</Config>
 </Container>
