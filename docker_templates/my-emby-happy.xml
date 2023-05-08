@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://registry.hub.docker.com/r/lovechen/embyserver</Support>
   <Project>https://registry.hub.docker.com/r/lovechen/embyserver</Project>
-  <Overview>Emby &#x7279;&#x522B;&#x7248;&#xFF0C;&#x53EF;&#x76F4;&#x63A5;&#x5F00;&#x542F;&#x786C;&#x89E3;&#x3002; &#x5982;&#x9700;&#x534F;&#x52A9;&#xFF0C;&#x8BF7;&#x5FAE;&#x4FE1;&#x8054;&#x7CFB;&#xFF1A;jackiewuuu&#x3002;</Overview>
+  <Overview>Emby &#x7279;&#x522B;&#x7248;&#xFF08;&#x975E;&#x5F00;&#x5FC3;&#x7248;&#xFF09;&#xFF0C;&#x53EF;&#x76F4;&#x63A5;&#x5F00;&#x542F;&#x786C;&#x89E3;&#x3002; &#x5982;&#x9700;&#x534F;&#x52A9;&#xFF0C;&#x8BF7;&#x5FAE;&#x4FE1;&#x8054;&#x7CFB;&#xFF1A;jackiewuuu&#x3002;</Overview>
   <Category/>
   <WebUI>http://[IP]:[PORT:8096]</WebUI>
   <TemplateURL/>
@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1683544978</DateInstalled>
+  <DateInstalled>1683545088</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
