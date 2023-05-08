@@ -3,7 +3,7 @@
   <Name>movie-robot</Name>
   <Repository>yipengfei/movie-robot</Repository>
   <Registry>https://hub.docker.com/r/yipengfei/movie-robot/</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -21,14 +21,14 @@ https://hub.docker.com/r/yipengfei/movie-robot/</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1670656505</DateInstalled>
+  <DateInstalled>1683545564</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="Config Files" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/movie-robot</Config>
   <Config Name="WebUI" Target="1329" Default="1329" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">1329</Config>
-  <Config Name="Container Variable 8" Target="LICENSE_KEY" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="/media" Target="/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
+  <Config Name="Container Variable 8" Target="LICENSE_KEY" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="yes"/>
+  <Config Name="&#x5F71;&#x97F3;&#x5E93;" Target="/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
   <Config Name="PGID" Target="PGID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
   <Config Name="PUID" Target="PUID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
   <Config Name="UMASK" Target="UMASK" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">000</Config>
