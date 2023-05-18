@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>mariadb-lskypro</Name>
+  <Repository>lscr.io/linuxserver/mariadb</Repository>
+  <Registry>https://github.com/orgs/linuxserver/packages/container/package/mariadb</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/linuxserver/docker-mariadb/issues/new/choose</Support>
+  <Project>https://mariadb.org/</Project>
+  <Overview>&#x6B64; mariadb &#x6A21;&#x677F;&#x662F;&#x4E13;&#x95E8;&#x914D;&#x5408; Lskypro &#x56FE;&#x5E8A;&#x8FDB;&#x884C;&#x4F7F;&#x7528;&#xFF0C;&#x5173;&#x4E8E; Lskypro &#x7684;&#x642D;&#x5EFA;&#x65B9;&#x6CD5;&#x8BF7;&#x53C2;&#x8003;&#x4F5C;&#x8005;&#x7684;&#x535A;&#x5BA2;&#xFF1A;https://jackiewu.top.&#xD;
+&#xD;
+&#x66F4;&#x591A; unRAID &#x8D44;&#x6E90;&#x548C;&#x4FE1;&#x606F;&#x8BF7;&#x8054;&#x7CFB;&#x672C;&#x6A21;&#x677F;&#x4F5C;&#x8005;&#xFF1A;JackieWu&#xFF08;&#x5FAE;&#x4FE1;&#xFF1A;jackiewuuu&#xFF09;</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:3306]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/mariadb.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mariadb-logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1684439109</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="3306" Default="3306" Mode="tcp" Description="Mariadb listens on this port." Type="Port" Display="always" Required="true" Mask="false">3306</Config>
+  <Config Name="MYSQL_ROOT_PASSWORD" Target="MYSQL_ROOT_PASSWORD" Default="ROOT_ACCESS_PASSWORD" Mode="{3}" Description="Set this to root password for installation (minimum 4 characters)." Type="Variable" Display="always" Required="true" Mask="true">lskypro</Config>
+  <Config Name="MYSQL_DATABASE" Target="MYSQL_DATABASE" Default="USER_DB_NAME" Mode="{3}" Description="Specify the name of a database to be created on image startup." Type="Variable" Display="always" Required="false" Mask="false">lskypro</Config>
+  <Config Name="MYSQL_USER" Target="MYSQL_USER" Default="MYSQL_USER" Mode="{3}" Description="This user will have superuser access to the database specified by MYSQL_DATABASE (do not use root here)." Type="Variable" Display="always" Required="false" Mask="false">lskypro</Config>
+  <Config Name="MYSQL_PASSWORD" Target="MYSQL_PASSWORD" Default="DATABASE_PASSWORD" Mode="{3}" Description="Set this to the password you want to use for you MYSQL_USER (minimum 4 characters)." Type="Variable" Display="always" Required="false" Mask="true">lskypro</Config>
+  <Config Name="REMOTE_SQL" Target="REMOTE_SQL" Default="http://URL1/your.sql,https://URL2/your.sql" Mode="{3}" Description="Set this to ingest sql files from an http/https endpoint (comma seperated array)." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains the db itself and all assorted settings." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/mariadb</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>
