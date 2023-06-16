@@ -2,15 +2,56 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name "fix.common.problems">
 <!ENTITY author "Andrew Zawadzki">
-<!ENTITY version "2022.10.17">
-<!ENTITY md5 "21db3705583a2c278d3258873d1a43ee">
+<!ENTITY version "2023.04.26">
+<!ENTITY md5 "08b31286107ba2b8c01b6e9cb59b6363">
 <!ENTITY launch "Settings/FixProblems">
 <!ENTITY plugdir "/usr/local/emhttp/plugins/&name;">
 <!ENTITY github "Squidly271/fix.common.problems">
 <!ENTITY pluginURL "https://raw.githubusercontent.com/&github;/master/plugins/&name;.plg">
 ]>
-<PLUGIN name="&name;" author="&author;" version="&version;" launch="&launch;" pluginURL="&pluginURL;" icon="warning" min="6.7.0" support="http://lime-technology.com/forum/index.php?topic=48972.0">
-  <CHANGES>
+<PLUGIN name="&name;" author="&author;" version="&version;" launch="&launch;" pluginURL="&pluginURL;" icon="warning" min="6.7.0" support="https://forums.unraid.net/topic/47266-plugin-ca-fix-common-problems/">
+
+<CHANGES>
+###2023.04.26
+- Check for legacy myservers installed on OS versions prior to 6.10
+- Update some broken links
+- PHP8 fixes
+
+###2023.03.22
+- Look for macvlan traces
+
+###2023.03.04
+- UD fix
+
+###2023.03.03
+- Adjust for new UD mount point recommendations
+- PHP8 Upgrades
+
+###2023.02.25
+- PHP8 Upgrades
+
+###2023.02.17
+- Docker Update Patch installed (6.11.x only)
+
+###2023.02.13
+- PHP8 Commpliance
+
+###2022.12.18
+- Re-add excluded folders option for New Perms
+
+###2022.12.13
+- Fixed: Certificate tests
+
+###2022.12.10
+- Remove Extended Tests
+
+###2022.12.09
+- Fixed: PHP8 compliance
+- Added: Check for Legacy Unraid.net certificates
+
+###2022.11.18
+- Fixed: Errors containing an apostrophe couldn't be re-monitored once ignored
+
 ###2022.10.17
 - Coding refinements
 
@@ -671,19 +712,24 @@
 ###2016-05-08###
 - Initial Release
 </CHANGES>
-  <!-- The 'pre-install' script. -->
-  <!--
+
+<!-- The 'pre-install' script. -->
+
+
+
+<!--
 The 'source' file.
 -->
-  <FILE Name="/boot/config/plugins/&name;/&name;-&version;-x86_64-1.txz" Run="upgradepkg --install-new">
-    <URL>https://raw.githubusercontent.com/&github;/master/archive/&name;-&version;-x86_64-1.txz</URL>
-    <MD5>&md5;</MD5>
-  </FILE>
-  <!--
+<FILE Name="/boot/config/plugins/&name;/&name;-&version;-x86_64-1.txz" Run="upgradepkg --install-new">
+<URL>https://raw.githubusercontent.com/&github;/master/archive/&name;-&version;-x86_64-1.txz</URL>
+<MD5>&md5;</MD5>
+</FILE>
+
+<!--
 The 'post-install' script
 -->
-  <FILE Run="/bin/bash">
-    <INLINE>
+<FILE Run="/bin/bash">
+<INLINE>
 rm -f $(ls /boot/config/plugins/&name;/&name;*.txz 2&gt;/dev/null | grep -v '&version;')
 /usr/local/emhttp/plugins/fix.common.problems/scripts/applyFrequency.php
 mkdir -p /boot/config/plugins/fix.common.problems/scripts/
@@ -696,12 +742,13 @@ echo " Version: &version;"
 echo "----------------------------------------------------"
 echo ""
 </INLINE>
-  </FILE>
-  <!--
+</FILE>
+
+<!--
 The 'remove' script.
 -->
-  <FILE Run="/bin/bash" Method="remove">
-    <INLINE>
+<FILE Run="/bin/bash" Method="remove">
+<INLINE>
 removepkg &name;-&version;-x86_64-1
 rm -rf /usr/local/emhttp/plugins/fix.common.problems
 rm -f /etc/cron.hourly/fix.common.problems.sh
@@ -709,5 +756,5 @@ rm -f /etc/cron.daily/fix.common.problems.sh
 rm -f /etc/cron.weekly/fix.common.problems.sh
 rm -f /etc/cron.monthly/fix.common.problems.sh
 </INLINE>
-  </FILE>
+</FILE> 
 </PLUGIN>
