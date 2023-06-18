@@ -13,7 +13,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:19035]</WebUI>
   <TemplateURL/>
-  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/docker_templates/icon/ChineseSubFinder.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/ChineseSubFinder.png</Icon>
   <ExtraParams>--log-driver "json-file" --log-opt "max-size=100m"</ExtraParams>
   <PostArgs/>
   <CPUset/>
