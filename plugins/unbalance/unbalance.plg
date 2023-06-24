@@ -4,15 +4,17 @@
 <!ENTITY name        "unbalance">
 <!ENTITY author      "Juan B. Rodriguez">
 <!ENTITY version     "5.6.4">
+<!ENTITY appver      "5.6.4">
 <!ENTITY launch      "Settings/&name;">
 <!ENTITY pluginURL   "https://gitee.com/jackiewuu/unraid/raw/master/plugins/unbalance/unbalance.plg">
-<!ENTITY bundle      "&name;-5.6.4;.tgz">
+<!ENTITY bundle      "&name;-&appver;.tgz">
 <!ENTITY md5         "{{md5}}">
 ]>
 
 <PLUGIN  name="&name;"
          author="&author;"
-         version="5.6.4;"
+         version="&version;"
+         appver="&appver;"
          launch="&launch;"
          pluginURL="&pluginURL;"
 >
