@@ -3,18 +3,16 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name        "unbalance">
 <!ENTITY author      "Juan B. Rodriguez">
-<!ENTITY version     "{{version}}">
-<!ENTITY appver      "{{appver}}">
+<!ENTITY version     "5.6.4">
 <!ENTITY launch      "Settings/&name;">
-<!ENTITY pluginURL   "https://ghproxy.com/https://raw.githubusercontent.com/jbrodriguez/unraid/master/plugins/&name;.plg">
-<!ENTITY bundle      "&name;-&appver;.tgz">
+<!ENTITY pluginURL   "https://gitee.com/jackiewuu/unraid/raw/master/plugins/unbalance/unbalance.plg">
+<!ENTITY bundle      "&name;-5.6.4;.tgz">
 <!ENTITY md5         "{{md5}}">
 ]>
 
 <PLUGIN  name="&name;"
          author="&author;"
-         version="&version;"
-         appver="&appver;"
+         version="5.6.4;"
          launch="&launch;"
          pluginURL="&pluginURL;"
 >
@@ -31,7 +29,7 @@ The plugin frees up space from a disk array in unRAID systems.
 Get the unBALANCE bundle.
 -->
 <FILE Name="/boot/config/plugins/&name;/&bundle;">
-<URL>"https://github.com/jbrodriguez/unbalance/releases/download/&appver;/&bundle;"</URL>
+<URL>"https://gitee.com/jackiewuu/unraid/raw/master/plugins/unbalance/unbalance-5.6.4.tgz;"</URL>
 <MD5>&md5;</MD5>
 </FILE>
 
