@@ -8,6 +8,7 @@
 <!ENTITY launch      "Settings/&name;">
 <!ENTITY pluginURL   "https://gitee.com/jackiewuu/unraid/raw/master/plugins/unbalance/unbalance.plg">
 <!ENTITY bundle      "&name;-&appver;.tgz">
+<!ENTITY md5         "C87C4DFECAD21F2E6100A4FE541B5C7B">
 ]>
 
 <PLUGIN  name="&name;"
