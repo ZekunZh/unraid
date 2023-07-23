@@ -3,7 +3,7 @@
   <Name>dockersocket</Name>
   <Repository>ghcr.io/tecnativa/docker-socket-proxy:latest</Repository>
   <Registry>https://hub.docker.com/r/tecnativa/docker-socket-proxy</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
