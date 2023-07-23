@@ -13,7 +13,7 @@
   <Category>Security: Tools:Utilities</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/docker-socket-proxy/docker-socket-proxy.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/ibracorp/app-logos/main/docker/docker-logo.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/dockersocket.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>

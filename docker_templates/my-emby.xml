@@ -3,7 +3,7 @@
   <Name>emby</Name>
   <Repository>linuxserver/emby:latest</Repository>
   <Registry>https://github.com/orgs/linuxserver/packages/container/package/emby</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -13,7 +13,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:8096]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emby-logo.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Emby.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
@@ -23,7 +23,7 @@
   <Requires/>
   <Config Name="WebUI" Target="8096" Default="8096" Mode="tcp" Description="Http webUI." Type="Port" Display="always" Required="true" Mask="false">8096</Config>
   <Config Name="Port: 8920" Target="8920" Default="8920" Mode="tcp" Description="Https webUI (you need to setup your own certificate)." Type="Port" Display="always" Required="false" Mask="false">8920</Config>
-  <Config Name="Path: /data" Target="/data/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Downloads/media/</Config>
+  <Config Name="Path: /data" Target="/data/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/</Config>
   <Config Name="/dev/dri" Target="{1}" Default="/dev/dri" Mode="" Description="Only needed if you want to use your Intel or AMD GPU for hardware accelerated video encoding (vaapi)." Type="Device" Display="always" Required="false" Mask="false">/dev/dri</Config>
   <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
   <Config Name="/transcode" Target="/transcode" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/emby/transcode</Config>
