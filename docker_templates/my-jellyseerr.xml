@@ -3,7 +3,7 @@
   <Name>jellyseerr</Name>
   <Repository>fallenbagel/jellyseerr:latest</Repository>
   <Registry>https://hub.docker.com/r/fallenbagel/jellyseerr/</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -18,7 +18,7 @@ https://github.com/Fallenbagel/jellyseerr/</Overview>
   <Category>Downloaders: MediaApp:Video</Category>
   <WebUI>http://[IP]:[PORT:5055]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/jellyseerr/jellyseerr.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/Fallenbagel/jellyseerr/main/public/android-chrome-512x512.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/jellyseerr.png</Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
@@ -30,8 +30,6 @@ https://github.com/Fallenbagel/jellyseerr/</Overview>
   <Config Name="Appdata" Target="/app/config/" Default="/mnt/user/appdata/Jellyseerr" Mode="rw" Description="Appdata directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/jellyseerr</Config>
   <Config Name="Log" Target="LOG_LEVEL" Default="debug" Mode="" Description="Log verbosity." Type="Variable" Display="always" Required="false" Mask="false">info</Config>
   <Config Name="Emby Users" Target="JELLYFIN_TYPE" Default="" Mode="" Description="If using Emby, enter " Type="Variable" Display="always" Required="true" Mask="false">emby</Config>
-  <Config Name="traefik.enable" Target="traefik.enable" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">true</Config>
-  <Config Name="traefik.http.routers.jellyseerr.entryPoints" Target="traefik.http.routers.jellyseerr.entryPoints" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
   <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">022</Config>

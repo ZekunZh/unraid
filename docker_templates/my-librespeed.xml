@@ -3,7 +3,7 @@
   <Name>librespeed</Name>
   <Repository>lscr.io/linuxserver/librespeed</Repository>
   <Registry>https://github.com/orgs/linuxserver/packages/container/package/librespeed</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
