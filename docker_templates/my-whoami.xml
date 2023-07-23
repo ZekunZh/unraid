@@ -3,7 +3,7 @@
   <Name>whoami</Name>
   <Repository>traefik/whoami</Repository>
   <Registry>https://hub.docker.com/r/traefik/whoami</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>

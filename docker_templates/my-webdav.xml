@@ -3,7 +3,7 @@
   <Name>webdav</Name>
   <Repository>derkades/webdav</Repository>
   <Registry>https://hub.docker.com/r/derkades/webdav</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -13,7 +13,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:882]</WebUI>
   <TemplateURL/>
-  <Icon>https://camo.githubusercontent.com/c3d5cdef0b26a269a02e5226b18383801275a30476a93b3b60530372a161d7dc/68747470733a2f2f796f6576656e2e6769746875622e696f2f4d6f756e7465722d44726976652f696d672f66617669636f6e2e706e67</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Webdav.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
@@ -21,8 +21,8 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="USERNAME" Target="USERNAME" Default="admin" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
-  <Config Name="PASSWORD" Target="PASSWORD" Default="admin" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
-  <Config Name="/data" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Downloads/</Config>
+  <Config Name="USERNAME" Target="USERNAME" Default="admin" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PASSWORD" Target="PASSWORD" Default="admin" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="/data" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
   <Config Name="web port" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">882</Config>
 </Container>

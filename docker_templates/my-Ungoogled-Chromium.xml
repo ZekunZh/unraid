@@ -19,7 +19,7 @@ You can find the full source code here: https://github.com/Eloston/ungoogled-chr
   <Category>Productivity: Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:8182]/vnc.html?autoconnect=true</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/ich777/docker-templates/master/ich777/images/chromium.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/chromium.png</Icon>
   <ExtraParams>--restart=unless-stopped --shm-size=2G</ExtraParams>
   <PostArgs/>
   <CPUset/>
