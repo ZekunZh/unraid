@@ -3,7 +3,7 @@
   <Name>bitwarden</Name>
   <Repository>vaultwarden/server:latest</Repository>
   <Registry>https://hub.docker.com/r/vaultwarden/server/</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -34,7 +34,7 @@
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/vaultwarden.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/bitwardenrs.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Bitwardenrs.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

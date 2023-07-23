@@ -14,7 +14,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:9091]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/authelia/authelia.xml</TemplateURL>
-  <Icon>https://i.imgur.com/DCn2yiv.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/authelia.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

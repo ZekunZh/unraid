@@ -3,7 +3,7 @@
   <Name>binhex-krusader</Name>
   <Repository>binhex/arch-krusader</Repository>
   <Registry>https://registry.hub.docker.com/r/binhex/arch-krusader/</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>true</Privileged>
@@ -15,7 +15,7 @@
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:6080]/vnc.html?resize=remote&amp;amp;host=[IP]&amp;amp;port=[PORT:6080]&amp;amp;autoconnect=1</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/krusader.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/krusader-icon.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Krusader.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

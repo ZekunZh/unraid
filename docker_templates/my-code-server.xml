@@ -3,7 +3,7 @@
   <Name>code-server</Name>
   <Repository>lscr.io/linuxserver/code-server:latest</Repository>
   <Registry>https://github.com/orgs/linuxserver/packages/container/package/code-server</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -19,7 +19,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:8443]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/code-server.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/code-server-logo.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Code-Server.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

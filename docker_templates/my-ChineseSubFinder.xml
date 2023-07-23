@@ -3,7 +3,7 @@
   <Name>ChineseSubFinder</Name>
   <Repository>allanpk716/chinesesubfinder:latest</Repository>
   <Registry>https://hub.docker.com/r/allanpk716/chinesesubfinder</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -23,7 +23,7 @@
   <Requires/>
   <Config Name="Web GUI Port" Target="19035" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">19035</Config>
   <Config Name="Static Files Service Port" Target="19037" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">19037</Config>
-  <Config Name="/media" Target="/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Downloads/</Config>
+  <Config Name="/media" Target="/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/</Config>
   <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
   <Config Name="/config" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/ChineseSubFinder/config</Config>
   <Config Name="/app/cache" Target="/app/cache" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/ChineseSubFinder/cache</Config>
