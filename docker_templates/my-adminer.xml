@@ -3,7 +3,7 @@
   <Name>adminer</Name>
   <Repository>adminer</Repository>
   <Registry>http://hub.docker.com/_/adminer/</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
