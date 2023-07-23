@@ -3,8 +3,8 @@
   <Name>aria2</Name>
   <Repository>p3terx/aria2-pro:latest</Repository>
   <Registry>https://hub.docker.com/r/p3terx/aria2-pro</Registry>
-  <Network>br2</Network>
-  <MyIP>10.10.11.4</MyIP>
+  <Network>bridge</Network>
+  <MyIP></MyIP>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support/>
@@ -13,7 +13,7 @@
   <Category/>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/fanningert/unraid-docker-templates/master/fanningert/icons/aria2daemon.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Aria2.png</Icon>
   <ExtraParams>--log-driver json-file --log-opt max-size=1m</ExtraParams>
   <PostArgs/>
   <CPUset/>
@@ -23,7 +23,7 @@
   <Requires/>
   <Config Name="RPC_SECRET" Target="RPC_SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="/config" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/aria2</Config>
-  <Config Name="/downloads" Target="/downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Downloads/aria2/</Config>
+  <Config Name="/downloads" Target="/downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
   <Config Name="DISK_CACHE" Target="DISK_CACHE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">512</Config>
   <Config Name="IPV6_MODE" Target="IPV6_MODE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
   <Config Name="SPECIAL_MODE" Target="SPECIAL_MODE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>

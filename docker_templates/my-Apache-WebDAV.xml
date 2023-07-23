@@ -31,7 +31,7 @@ Execute the command multiple times with different usernames to add more users.</
   <Category>Cloud:</Category>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/mgutt/unraid-docker-templates/master/mgutt/Apache-WebDAV.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/mgutt/unraid-docker-templates/main/mgutt/images/webdav-powered-by-apache.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Apache-WebDAV.png</Icon>
   <ExtraParams>--memory=1G</ExtraParams>
   <PostArgs/>
   <CPUset/>
