@@ -13,7 +13,7 @@
   <Category>Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/firefox.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/firefox-logo.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/firefox.png</Icon>
   <ExtraParams>--shm-size=1gb</ExtraParams>
   <PostArgs/>
   <CPUset/>

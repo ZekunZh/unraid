@@ -3,7 +3,7 @@
   <Name>frpc</Name>
   <Repository>snowdreamtech/frpc:latest</Repository>
   <Registry>https://hub.docker.com/r/stilleshan/frpc/</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -24,6 +24,6 @@ https://hub.docker.com/r/stilleshan/frpc/</Overview>
   <DateInstalled>1668430386</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Requires>http://10.10.10.3/Docker</Requires>
+  <Requires></Requires>
   <Config Name="/etc/frp/frpc.ini" Target="/etc/frp/frpc.ini" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/frpc/frpc.ini</Config>
 </Container>

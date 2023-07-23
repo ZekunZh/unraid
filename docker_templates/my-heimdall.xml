@@ -3,7 +3,7 @@
   <Name>heimdall</Name>
   <Repository>lscr.io/linuxserver/heimdall:latest</Repository>
   <Registry>https://github.com/orgs/linuxserver/packages/container/package/heimdall</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -15,7 +15,7 @@ Why not use it as your browser start page? It even has the ability to include a 
   <Category/>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/heimdall.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/heimdall-logo.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Heimdall.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

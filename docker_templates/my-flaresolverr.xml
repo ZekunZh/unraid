@@ -3,7 +3,7 @@
   <Name>flaresolverr</Name>
   <Repository>flaresolverr/flaresolverr</Repository>
   <Registry>https://hub.docker.com/r/flaresolverr/flaresolverr</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -13,7 +13,7 @@
   <Category/>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/flaresolverr.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/FlareSolverr/FlareSolverr/master/resources/flaresolverr_logo.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Flaresolver.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

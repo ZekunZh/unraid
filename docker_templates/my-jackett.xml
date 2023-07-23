@@ -3,7 +3,7 @@
   <Name>jackett</Name>
   <Repository>linuxserver/jackett:latest</Repository>
   <Registry>https://hub.docker.com/r/linuxserver/jackett/</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -13,7 +13,7 @@
   <Category>Downloaders: Tools:</Category>
   <WebUI>http://[IP]:[PORT:9117]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/jackett.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jacket-icon.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Jacket.png</Icon>
   <ExtraParams>--sysctl net.ipv6.conf.all.disable_ipv6=1</ExtraParams>
   <PostArgs/>
   <CPUset/>
