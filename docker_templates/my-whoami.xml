@@ -13,7 +13,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:2001]</WebUI>
   <TemplateURL/>
-  <Icon>https://user-images.githubusercontent.com/59175356/160829133-b140e801-8e1e-4255-9277-7ab05ae3640d.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/whoami.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
@@ -23,7 +23,4 @@
   <Requires/>
   <Config Name="WHOAMI_PORT_NUMBER" Target="WHOAMI_PORT_NUMBER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">2001</Config>
   <Config Name="2001" Target="2001" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">2001</Config>
-  <Config Name="traefik.enable" Target="traefik.enable" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">true</Config>
-  <Config Name="traefik.http.routers.whoami.entryPoints" Target="traefik.http.routers.whoami.entryPoints" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">https</Config>
-  <Config Name="traefik.http.services.whoami.loadbalancer.server.port" Target="traefik.http.services.whoami.loadbalancer.server.port" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">2001</Config>
 </Container>

@@ -3,7 +3,7 @@
   <Name>youtube-dl-material</Name>
   <Repository>tzahi12345/youtubedl-material</Repository>
   <Registry>https://hub.docker.com/r/tzahi12345/youtubedl-material/</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
