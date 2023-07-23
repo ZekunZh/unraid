@@ -1,0 +1,23 @@
+# 多行字符串
+multiline_string = '''
+Hello, world!   
+This is a multiline  
+string.  
+'''
+
+# 拆分成行的列表
+lines = multiline_string.splitlines()
+
+# 去除每行字符串中单词后面的空格
+cleaned_lines = []
+for line in lines:
+    words = line.split()
+    cleaned_words = [word.rstrip(',') for word in words]
+    cleaned_line = ' '.join(cleaned_words)
+    cleaned_lines.append(cleaned_line)
+
+# 重新组合成字符串
+cleaned_string = '\n'.join(cleaned_lines)
+
+# 输出结果
+print(cleaned_string)
