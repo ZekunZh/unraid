@@ -24,9 +24,9 @@
   <DonateLink/>
   <Requires/>
   <Config Name="config" Target="/app/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/rss_to_telegram_bot/</Config>
-  <Config Name="Telegram Bot Token" Target="TOKEN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">6238821168:AAG4wLo9wi_udkOnF7MMiii1mlyTDCZIwkA</Config>
+  <Config Name="Telegram Bot Token" Target="TOKEN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="User Id" Target="MANAGER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">1030509993</Config>
-  <Config Name="Telegraph Token" Target="TELEGRAPH_TOKEN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">66444d02059daae561a04cde16b0da7c6361faceaffe6df103fc76421ae0</Config>
+  <Config Name="Telegraph Token" Target="TELEGRAPH_TOKEN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="User-Agent" Target="USER_AGENT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36</Config>
   <Config Name="TABLE_TO_IMAGE" Target="TABLE_TO_IMAGE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
   <Config Name="DEBUG" Target="DEBUG" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>

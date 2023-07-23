@@ -3,7 +3,7 @@
   <Name>mariadb</Name>
   <Repository>lscr.io/linuxserver/mariadb</Repository>
   <Registry>https://github.com/orgs/linuxserver/packages/container/package/mariadb</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -13,7 +13,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:3306]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/mariadb.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mariadb-logo.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Mariadb.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

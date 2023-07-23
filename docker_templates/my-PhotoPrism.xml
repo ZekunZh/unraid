@@ -3,7 +3,7 @@
   <Name>PhotoPrism</Name>
   <Repository>photoprism/photoprism</Repository>
   <Registry>https://hub.docker.com/r/photoprism/photoprism</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -17,7 +17,7 @@ Database lockups: If you got problems where the database lockes up you should sw
   <Category/>
   <WebUI>http://[IP]:[PORT:2342]/</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/ich777/docker-templates/master/ich777/images/photoprism.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Photoprism.png</Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
@@ -26,7 +26,7 @@ Database lockups: If you got problems where the database lockes up you should sw
   <DonateLink>https://www.paypal.me/photoprism</DonateLink>
   <Requires/>
   <Config Name="Data Dir" Target="/photoprism/storage" Default="" Mode="rw" Description="Storage PATH for generated files like cache and index (Keep cache, settings and database)" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/photoprism</Config>
-  <Config Name="Storage Path" Target="/photoprism/originals" Default="" Mode="rw" Description="Path to your images and storage folder" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Downloads/pics/</Config>
+  <Config Name="Storage Path" Target="/photoprism/originals" Default="" Mode="rw" Description="Path to your images and storage folder" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/photoprism</Config>
   <Config Name="Photo Import Folder" Target="/photoprism/import" Default="" Mode="rw" Description="Only if you want to use the Import function of PhotoPrism (ATTENTION: Don't put the import folder in a subdirectory of the storage folder for your images!)" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="Offensive Uploads" Target="PHOTOPRISM_UPLOAD_NSFW" Default="" Mode="" Description="Allow uploads that MAY be offensive (Valid options: 'true' or 'false')" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="Flag Offensive Photos" Target="PHOTOPRISM_DETECT_NSFW" Default="" Mode="" Description="Flag photos as private that MAY be offensive (Valid options: 'true' or 'false')" Type="Variable" Display="always" Required="false" Mask="false">false</Config>

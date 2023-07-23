@@ -3,7 +3,7 @@
   <Name>qflood</Name>
   <Repository>cr.hotio.dev/hotio/qflood</Repository>
   <Registry>https://hub.docker.com/r/hotio/qflood</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -13,7 +13,7 @@
   <Category>Downloaders:</Category>
   <WebUI>http://[IP]:[PORT:3010]</WebUI>
   <TemplateURL/>
-  <Icon>https://hotio.dev/webhook-avatars/flood.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Flood.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

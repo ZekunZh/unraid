@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>OnlyOfficeDocumentServer</Name>
+  <Repository>onlyoffice/documentserver</Repository>
+  <Registry>https://hub.docker.com/r/onlyoffice/documentserver/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
+  <Project>https://www.onlyoffice.com/</Project>
+  <Overview>ONLYOFFICE Document Server is an online office suite comprising viewers and editors for texts, spreadsheets and presentations, fully compatible with Office Open XML formats: .docx, .xlsx, .pptx and enabling collaborative editing in real time.&#xD;
+	HTTPS Support can be enable creating a "certs" folder in the data directory and placing onlyoffice.crt and onlyoffice.key in it. Add fonts by placing .ttf in the font folder and force updating the container.</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8081]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/SiwatINC/unraid-ca-repository/master/docker-template/onlyoffice_document_server.xml</TemplateURL>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Onlyoffice.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1688479396</DateInstalled>
+  <DonateText>If you like it, then consider buying me a soda as I don&amp;amp;#39;t like beer :P</DonateText>
+  <DonateLink>https://www.paypal.me/siwatsirichai</DonateLink>
+  <Requires/>
+  <Config Name="HTTP Port" Target="80" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8081</Config>
+  <Config Name="HTTPS Port" Target="443" Default="4430" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">4430</Config>
+  <Config Name="Log Directory" Target="/var/log/onlyoffice" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/onlyofficeds/logs</Config>
+  <Config Name="Data Directory" Target="/var/www/onlyoffice/Data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/onlyofficeds/Data</Config>
+  <Config Name="Font Directory" Target="/usr/share/fonts" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/onlyofficeds/fonts</Config>
+  <Config Name="Secret Key" Target="JWT_SECRET" Default="secret123" Mode="" Description="API Secret Key" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+</Container>

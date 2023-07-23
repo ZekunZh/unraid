@@ -3,7 +3,7 @@
   <Name>nextcloud</Name>
   <Repository>lscr.io/linuxserver/nextcloud:latest</Repository>
   <Registry>https://github.com/orgs/linuxserver/packages/container/package/nextcloud</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -15,7 +15,7 @@ Where are your photos and documents? With Nextcloud you pick a server of your ch
   <Category/>
   <WebUI>https://[IP]:[PORT:444]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/nextcloud.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nextcloud-logo.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Nextcloud.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

@@ -3,7 +3,7 @@
   <Name>MongoDB</Name>
   <Repository>mongo</Repository>
   <Registry>https://hub.docker.com/_/mongo/</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -13,7 +13,7 @@
   <Category>Network:Other</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/jason-bean/docker-templates/master/jasonbean-repo/MongoDB.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/jason-bean/docker-templates/master/jasonbean-repo/mongo.sh-600x600.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Mariadb.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

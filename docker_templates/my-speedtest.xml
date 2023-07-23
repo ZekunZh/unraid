@@ -3,7 +3,7 @@
   <Name>speedtest</Name>
   <Repository>adolfintel/speedtest:latest</Repository>
   <Registry>https://hub.docker.com/r/adolfintel/speedtest/</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>

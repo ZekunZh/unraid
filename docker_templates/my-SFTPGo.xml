@@ -3,7 +3,7 @@
   <Name>SFTPGo</Name>
   <Repository>drakkan/sftpgo:v2.3.3</Repository>
   <Registry>https://hub.docker.com/r/drakkan/sftpgo</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -29,7 +29,7 @@
   <Config Name="AppData" Target="/srv/sftpgo/data" Default="/mnt/user/appdata/sftpgo/data" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/sftpgo/data</Config>
   <Config Name="Backup Directory" Target="/srv/sftpgo/backups" Default="/mnt/user/appdata/sftpgo/backups" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/sftpgo/backups</Config>
   <Config Name="Config Path" Target="/var/lib/sftpgo" Default="/mnt/user/appdata/sftpgo/config" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/sftpgo/config</Config>
-  <Config Name="Share Access" Target="/unraid" Default="/mnt/user" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/nextcloud/jackiewu/files/</Config>
+  <Config Name="Share Access" Target="/unraid" Default="/mnt/user" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Passive Mode IP" Target="SFTPGO_FTPD__BINDINGS__0__FORCE_PASSIVE_IP" Default="" Mode="" Description="Put your server IP here for local access, or your public IP for public access via port forwarding." Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Defender Enabled" Target="SFTPGO_COMMON__DEFENDER__ENABLED" Default="true" Mode="" Description="https://github.com/drakkan/sftpgo/blob/main/docs/defender.md" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="/etc/sftpgo" Target="/etc/sftpgo" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/sftpgo/etc_sftpgo</Config>

@@ -14,7 +14,7 @@ No Flash, No Java, No Websocket, No Bullshit.</Overview>
   <Category>Tools:Utilities Network:Web</Category>
   <WebUI>http://[IP]:[PORT:6680]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/librespeed.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/librespeed-logo.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/librespeed.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
@@ -23,7 +23,7 @@ No Flash, No Java, No Websocket, No Bullshit.</Overview>
   <DonateLink>https://www.linuxserver.io/donate</DonateLink>
   <Requires/>
   <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="web gui" Type="Port" Display="always" Required="true" Mask="false">6680</Config>
-  <Config Name="PASSWORD" Target="PASSWORD" Default="PASSWORD" Mode="{3}" Description="Set the password for the results database." Type="Variable" Display="always" Required="true" Mask="true">whb13907707741</Config>
+  <Config Name="PASSWORD" Target="PASSWORD" Default="PASSWORD" Mode="{3}" Description="Set the password for the results database." Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="CUSTOM_RESULTS" Target="CUSTOM_RESULTS" Default="false" Mode="{3}" Description="(optional) set to `true` to enable custom results page in `/config/www/results/index.php`." Type="Variable" Display="always" Required="false" Mask="false">false</Config>
   <Config Name="DB_TYPE" Target="DB_TYPE" Default="sqlite" Mode="{3}" Description="Defaults to `sqlite`, can also be set to `mysql` or `postgresql`." Type="Variable" Display="always" Required="false" Mask="false">sqlite</Config>
   <Config Name="DB_NAME" Target="DB_NAME" Default="DB_NAME" Mode="{3}" Description="Database name. Required for mysql and pgsql." Type="Variable" Display="always" Required="false" Mask="false">DB_NAME</Config>

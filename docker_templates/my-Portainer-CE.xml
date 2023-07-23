@@ -3,7 +3,7 @@
   <Name>Portainer-CE</Name>
   <Repository>portainer/portainer-ce</Repository>
   <Registry>https://registry.hub.docker.com/r/portainer/portainer-ce</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -15,7 +15,7 @@
   <Category>Docker:</Category>
   <WebUI>http://[IP]:[PORT:9001]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/DanRegalia/UNRAID/main/portainer-ce-unraid.xml</TemplateURL>
-  <Icon>https://developer.asustor.com/uploadIcons/0020_999_1601372094_Portainer_256.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/dockersocket.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

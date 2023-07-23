@@ -3,7 +3,7 @@
   <Name>prowlarr</Name>
   <Repository>linuxserver/prowlarr</Repository>
   <Registry>https://github.com/orgs/linuxserver/packages/container/package/prowlarr</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -13,7 +13,7 @@
   <Category>Productivity: Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:9696]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/prowlarr.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/prowlarr-logo.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Prowlarr.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
