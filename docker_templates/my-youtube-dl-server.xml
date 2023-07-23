@@ -24,7 +24,7 @@ curl -X POST --data-urlencode "url={{url}}" http://{{address}}:{{port}}/youtube-
   <Category>Downloaders:</Category>
   <WebUI>http://[IP]:[PORT:8080]/youtube-dl</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/rroller/unraid-templates/master/ronnieroller.com/youtube-dl-server.xml</TemplateURL>
-  <Icon>https://i.imgur.com/taKLB37.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/youtube-dl-server.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
