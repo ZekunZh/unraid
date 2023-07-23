@@ -17,7 +17,7 @@ It will also keep a record of already downloaded items. Enjoy! :)</Overview>
   <Category>Downloaders: MediaApp:Video MediaApp:Music</Category>
   <WebUI>http://[IP]:[PORT:17442]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/youtubedl-material.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/youtubedl-material.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/youtubedl-material.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
@@ -26,7 +26,7 @@ It will also keep a record of already downloaded items. Enjoy! :)</Overview>
   <DonateLink/>
   <Requires/>
   <Config Name="WebUI" Target="17442" Default="17442" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="true" Mask="false">17442</Config>
-  <Config Name="Video Downloads" Target="/app/video/" Default="" Mode="rw" Description="Video Downloads" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/nextcloud/jackiewu/files/Unraid/video/</Config>
+  <Config Name="Video Downloads" Target="/app/video/" Default="" Mode="rw" Description="Video Downloads" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/</Config>
   <Config Name="WebUI Title" Target="ytdl_title_top" Default="YoutubeDL Material" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">YoutubeDL Material</Config>
   <Config Name="UID" Target="UID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
   <Config Name="GID" Target="GID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
