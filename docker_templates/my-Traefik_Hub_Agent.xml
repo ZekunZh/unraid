@@ -3,7 +3,7 @@
   <Name>Traefik_Hub_Agent</Name>
   <Repository>ghcr.io/traefik/hub-agent-traefik:latest</Repository>
   <Registry/>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>

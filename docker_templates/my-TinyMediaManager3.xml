@@ -3,7 +3,7 @@
   <Name>TinyMediaManager3</Name>
   <Repository>dzhuang/tinymediamanager:latest-v4</Repository>
   <Registry>https://hub.docker.com/r/coolasice1999/tmm</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -13,7 +13,7 @@
   <Category>MediaApp:Video MediaApp:Other MediaServer:Video MediaServer:Other</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/hussainalhaddad/docker-templates/master/tinymediamanager/tinymediamanager.xml</TemplateURL>
-  <Icon>https://github.com/hussainalhaddad/docker-templates/raw/master/tinymediamanager/icon.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Tinymediamanager.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
@@ -21,7 +21,7 @@
   <DonateText>If you like my work please consider donating.</DonateText>
   <DonateLink>https://www.paypal.me/husainalhadad</DonateLink>
   <Requires/>
-  <Config Name="MediaDir" Target="/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Downloads/</Config>
+  <Config Name="MediaDir" Target="/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/</Config>
   <Config Name="Timezone" Target="TZ" Default="Asia/Bahrain" Mode="" Description="Full list:&#13;&#10;&#13;&#10;https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
   <Config Name="WebUI port" Target="5800" Default="5800" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">5800</Config>
   <Config Name="ENABLE_CJK_FONT" Target="ENABLE_CJK_FONT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>

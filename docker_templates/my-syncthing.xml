@@ -3,7 +3,7 @@
   <Name>syncthing</Name>
   <Repository>lscr.io/linuxserver/syncthing:latest</Repository>
   <Registry>https://github.com/orgs/linuxserver/packages/container/package/syncthing</Registry>
-  <Network>swag</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -13,7 +13,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:8384]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/syncthing.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syncthing-logo.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Syncthing.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
@@ -26,8 +26,6 @@
   <Config Name="Port: 22000" Target="22000" Default="22000" Mode="udp" Description="Listening port (UDP)" Type="Port" Display="always" Required="true" Mask="false">22000</Config>
   <Config Name="Port: 21027" Target="21027" Default="21027" Mode="udp" Description="Protocol discovery" Type="Port" Display="always" Required="true" Mask="false">21027</Config>
   <Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Data1" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/syncthing/</Config>
-  <Config Name="Enable Traefik" Target="traefik.enable" Default="true" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">true</Config>
-  <Config Name="traefik https" Target="traefik.http.routers.syncthing.entryPoints" Default="https" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">https</Config>
   <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/syncthing" Mode="rw" Description="Configuration files." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/syncthing</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
