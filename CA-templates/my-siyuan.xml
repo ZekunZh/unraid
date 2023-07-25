@@ -9,7 +9,11 @@
   <Privileged>false</Privileged>
   <Support/>
   <Project>https://gitee.com/siyuan-note</Project>
-  <Overview/>
+  <Overview>&#x6B64;&#x4E3A;&#x601D;&#x6E90;&#x7B14;&#x8BB0;&#x7684; unRAID CA &#x6A21;&#x677F;&#x3002;&#xD;
+&#xD;
+&#x4F5C;&#x8005;&#xFF1A;JackieWu&#xD;
+&#x8054;&#x7CFB;&#x65B9;&#x5F0F;&#xFF08;VX&#xFF09;&#xFF1A;jackiewuuu&#xD;
+&#x535A;&#x5BA2;&#xFF1A;www.jackiewu.top</Overview>
   <Category/>
   <WebUI>http://[IP]:[PORT:6806]</WebUI>
   <TemplateURL/>
