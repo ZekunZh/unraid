@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>siyuan</Name>
+  <Repository>b3log/siyuan:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://gitee.com/siyuan-note</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:6806]</WebUI>
+  <TemplateURL/>
+  <Icon>https://b3log.org/images/brand/siyuan-128.png</Icon>
+  <ExtraParams>-u 1000:1000</ExtraParams>
+  <PostArgs>--workspace /mnt/user/appdata/siyuan</PostArgs>
+  <CPUset/>
+  <DateInstalled>1690280984</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="6806" Target="6806" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">6806</Config>
+  <Config Name="/mnt/user/appdata/siyuan" Target="/mnt/user/appdata/siyuan" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/siyuan</Config>
+</Container>
