@@ -3,7 +3,7 @@
   <Name>acme</Name>
   <Repository>neilpang/acme.sh:latest</Repository>
   <Registry/>
-  <Network>traefik</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
@@ -19,7 +19,7 @@
   <ExtraParams/>
   <PostArgs>daemon</PostArgs>
   <CPUset/>
-  <DateInstalled>1692132461</DateInstalled>
+  <DateInstalled>1692169660</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
