@@ -13,7 +13,7 @@
   <Category/>
   <WebUI>http://[IP]:8082/files</WebUI>
   <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Filebrowser.png</Icon>
-  <ExtraParams>--device=/dev/dri</ExtraParams>
+  <ExtraParams></ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1683532651</DateInstalled>
