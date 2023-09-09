@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>postfix</Name>
+  <Name>Postfix</Name>
   <Repository>juanluisbaptiste/postfix:latest</Repository>
   <Registry/>
-  <Network>traefik</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
@@ -23,12 +23,12 @@ CA Template Author: JackieWu ( Blog: jackiewu.top )</Overview>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="SMTP_SERVER" Target="SMTP_SERVER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">smtp.gmail.com</Config>
+  <Config Name="Mail Port" Target="25" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">25</Config>
   <Config Name="SMTP_PORT" Target="SMTP_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">465</Config>
-  <Config Name="SMTP_USERNAME" Target="SMTP_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">junbujian6216@gmail.com</Config>
-  <Config Name="SMTP_PASSWORD" Target="SMTP_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">wmagiizrnmaksefq</Config>
+  <Config Name="SMTP_SERVER" Target="SMTP_SERVER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">smtp.gmail.com</Config>
+  <Config Name="SMTP_USERNAME" Target="SMTP_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="SMTP_PASSWORD" Target="SMTP_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="SERVER_HOSTNAME" Target="SERVER_HOSTNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Unraid</Config>
   <Config Name="SMTP_HEADER_TAG " Target="SMTP_HEADER_TAG " Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Relay-postfix</Config>
   <Config Name="SMTP_NETWORKS" Target="SMTP_NETWORKS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0.0.0.0/0</Config>
-  <Config Name="Mail Port" Target="25" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">25</Config>
 </Container>
