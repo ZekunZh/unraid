@@ -3,7 +3,7 @@
 <!ENTITY name      "community.applications">
 <!ENTITY author    "Andrew Zawadzki">
 <!ENTITY version   "2023.03.11">
-<!ENTITY md5       "07710453FF204CDACBCAAA974611923C">
+<!ENTITY md5       "07710453ff204cdacbcaaa974611923c">
 <!ENTITY launch    "Apps">
 <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
 <!ENTITY github    "jackiewuu/unraid">
