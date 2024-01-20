@@ -24,4 +24,5 @@
   <Config Name="WebUI" Target="8787" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8787</Config>
   <Config Name="/IYUU/db" Target="/IYUU/db" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="/BT_backup" Target="/BT_backup" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="/torrents" Target="/torrents" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
 </Container>
