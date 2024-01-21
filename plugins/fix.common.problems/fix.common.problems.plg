@@ -2,16 +2,40 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name "fix.common.problems">
 <!ENTITY author "Andrew Zawadzki">
-<!ENTITY version "2023.07.16">
-<!ENTITY md5 "6740fb39732b1b071a3e9ddf695c0c70">
+<!ENTITY version "2024.01.07">
+<!ENTITY md5 "085ee69665494da5129a27dbebe18be6">
 <!ENTITY launch "Settings/FixProblems">
 <!ENTITY plugdir "/usr/local/emhttp/plugins/&name;">
 <!ENTITY github "Squidly271/fix.common.problems">
 <!ENTITY pluginURL "https://raw.githubusercontent.com/&github;/master/plugins/&name;.plg">
 ]>
 <PLUGIN name="&name;" author="&author;" version="&version;" launch="&launch;" pluginURL="&pluginURL;" icon="warning" min="6.7.0" support="https://forums.unraid.net/topic/47266-plugin-ca-fix-common-problems/">
+  <CHANGES>
+###2024.01.07
+- Further flash corruption changes
+- PHP8 upgrades
 
-<CHANGES>
+###2023.12.24
+- Wording changes on various tests
+
+###2023.12.21
+- Check for macvlan and bridging enabled 6.12.4+
+- Check for realtek and plugin
+- Enable publishing status to diagnostics
+
+###2023.10.08
+- Check server's date and time
+
+###2023.09.30
+- Changed: Run update_cron when array starts (fixes issue with OS 6.12.4)
+- Changed: Don't check for macvlan traces on 6.12.x+
+
+###2023.07.29
+- Fix PHP8 errors if network configuration is completely non-functional ;)
+
+###2023.07.27
+- PHP8 Fixes
+
 ###2023.07.16
 - FTP Running fixes
 
@@ -715,24 +739,19 @@
 ###2016-05-08###
 - Initial Release
 </CHANGES>
-
-<!-- The 'pre-install' script. -->
-
-
-
-<!--
+  <!-- The 'pre-install' script. -->
+  <!--
 The 'source' file.
 -->
-<FILE Name="/boot/config/plugins/&name;/&name;-&version;-x86_64-1.txz" Run="upgradepkg --install-new">
-<URL>https://raw.githubusercontent.com/&github;/master/archive/&name;-&version;-x86_64-1.txz</URL>
-<MD5>&md5;</MD5>
-</FILE>
-
-<!--
+  <FILE Name="/boot/config/plugins/&name;/&name;-&version;-x86_64-1.txz" Run="upgradepkg --install-new">
+    <URL>https://raw.githubusercontent.com/&github;/master/archive/&name;-&version;-x86_64-1.txz</URL>
+    <MD5>&md5;</MD5>
+  </FILE>
+  <!--
 The 'post-install' script
 -->
-<FILE Run="/bin/bash">
-<INLINE>
+  <FILE Run="/bin/bash">
+    <INLINE>
 rm -f $(ls /boot/config/plugins/&name;/&name;*.txz 2&gt;/dev/null | grep -v '&version;')
 /usr/local/emhttp/plugins/fix.common.problems/scripts/applyFrequency.php
 mkdir -p /boot/config/plugins/fix.common.problems/scripts/
@@ -740,18 +759,17 @@ rm -rf /tmp/fix.common.problems/errors.json
 echo ""
 echo "----------------------------------------------------"
 echo " &name; has been installed."
-echo " Copyright 2016-2022, Andrew Zawadzki"
+echo " Copyright 2016-2024, Andrew Zawadzki"
 echo " Version: &version;"
 echo "----------------------------------------------------"
 echo ""
 </INLINE>
-</FILE>
-
-<!--
+  </FILE>
+  <!--
 The 'remove' script.
 -->
-<FILE Run="/bin/bash" Method="remove">
-<INLINE>
+  <FILE Run="/bin/bash" Method="remove">
+    <INLINE>
 removepkg &name;-&version;-x86_64-1
 rm -rf /usr/local/emhttp/plugins/fix.common.problems
 rm -f /etc/cron.hourly/fix.common.problems.sh
@@ -759,5 +777,5 @@ rm -f /etc/cron.daily/fix.common.problems.sh
 rm -f /etc/cron.weekly/fix.common.problems.sh
 rm -f /etc/cron.monthly/fix.common.problems.sh
 </INLINE>
-</FILE> 
+  </FILE>
 </PLUGIN>
