@@ -22,7 +22,7 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="&#x7BA1;&#x7406;&#x5458;&#x7528;&#x6237;&#x540D;" Target="SUPERUSER" Default="admin" Mode="" Description="&#x81EA;&#x5B9A;&#x4E49;&#x7BA1;&#x7406;&#x5458;&#x8D26;&#x6237;&#xFF0C;&#x9ED8;&#x8BA4;admin" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="&#x7BA1;&#x7406;&#x5458;&#x7528;&#x6237;&#x540D;" Target="SUPERUSER" Default="admin" Mode="" Description="&#x81EA;&#x5B9A;&#x4E49;&#x7BA1;&#x7406;&#x5458;&#x8D26;&#x6237;&#xFF0C;&#x9ED8;&#x8BA4;admin" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="&#x7BA1;&#x7406;&#x5458;&#x5BC6;&#x7801;" Target="SUPERUSER_PASSWORD" Default="password" Mode="" Description="&#x7BA1;&#x7406;&#x5458;&#x767B;&#x9646;&#x5BC6;&#x7801;&#xFF0C;&#x9ED8;&#x8BA4;password" Type="Variable" Display="always" Required="false" Mask="true"></Config>
   <Config Name="&#x8F6C;&#x79FB;&#x65B9;&#x5F0F;" Target="TRANSFER_TYPE" Default="link" Mode="" Description="&#x8F6C;&#x79FB;&#x65B9;&#x5F0F;&#xFF0C;&#x652F;&#x6301;link/copy/move/softlink" Type="Variable" Display="always" Required="false" Mask="false">link</Config>
   <Config Name="&#x4E0B;&#x8F7D;&#x4E8C;&#x7EA7;&#x5206;&#x7C7B;" Target="DOWNLOAD_CATEGORY" Default="true/false" Mode="" Description=" &#x4E0B;&#x8F7D;&#x4E8C;&#x7EA7;&#x5206;&#x7C7B;&#x5F00;&#x5173;&#xFF0C;true/false&#xFF0C;&#x9ED8;&#x8BA4;false&#xFF0C;&#x5F00;&#x542F;&#x540E;&#x4F1A;&#x6839;&#x636E;&#x914D;&#x7F6E;category.yaml&#x81EA;&#x52A8;&#x5728;&#x4E0B;&#x8F7D;&#x76EE;&#x5F55;&#x4E0B;&#x5EFA;&#x7ACB;&#x4E8C;&#x7EA7;&#x76EE;&#x5F55;&#x5206;&#x7C7B;" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
