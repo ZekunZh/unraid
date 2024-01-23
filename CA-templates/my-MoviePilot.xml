@@ -3,7 +3,7 @@
   <Name>MoviePilot</Name>
   <Repository>jxxghp/moviepilot:latest</Repository>
   <Registry>https://hub.docker.com/r/jxxghp/moviepilot</Registry>
-  <Network>traefik</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
