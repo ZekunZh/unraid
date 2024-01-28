@@ -2,12 +2,12 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name		"recycle.bin">
 <!ENTITY author		"dlandon">
-<!ENTITY version	"2023.04.12">
+<!ENTITY version	"2023.12.31">
 <!ENTITY launch		"Settings/RecycleBin">
 <!ENTITY gitURL		"https://raw.githubusercontent.com/&author;/&name;/master">
 <!ENTITY pluginURL	"&gitURL;/&name;.plg">
 <!ENTITY supportURL	"https://forums.unraid.net/topic/41044-recycle-bin-vfs-recycle-for-smb-shares/">
-<!ENTITY MD5		"8cfcf7f86dde25d45b43ab4d11fe0660">
+<!ENTITY MD5		"9e872700cfec59bcb2f0246139c996cf">
 ]>
 
 <PLUGIN	name="&name;"
@@ -22,6 +22,29 @@
 <CHANGES>
 ##&name;
 ###&version;
+- Fix: Excluded directories with spaces not working.
+
+###2023.12.15
+- Fix: Flash Recycle Bin size not adding to total Recycle Bin size correctly.
+- FIx: Clean up shares table and add line highlight to shares.
+- Fix: Put styles into .css files.
+
+###2023.08.12
+- Fix: Unassigned Devices not included in Recycle Bin if share has a space.
+
+###2023.07.11
+- Fix: Don't include the legacy remote share symbolic links in the Recycle Bin.  Remote shares should not show in the Recycle Bin.
+
+###2023.06.01
+- Fix: Recycle bin trashsize php warning when recycle bin is empty.
+
+###2023.05.21
+- FIx: Change default setting of hide recycle bin folder to No.
+
+###2023.05.20
+- Add: Setting to hide the .Recycle.Bin folder in user shares.
+
+###2023.04.12
 - Fix: Refresh the samba configuration instead of restarting samba when starting and stopping the recycle bin.  This keeps shares from going off-line briefly.
 
 ###2023.02.20
