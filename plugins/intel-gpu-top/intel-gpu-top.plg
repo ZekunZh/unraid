@@ -2,15 +2,22 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name "intel-gpu-top">
 <!ENTITY author "ich777">
-<!ENTITY version "2023.02.15">
+<!ENTITY version "2023.09.13">
 <!ENTITY gitURL "https://github.com/&author;/&name;/releases/download">
 <!ENTITY pluginURL "https://raw.githubusercontent.com/&author;/&name;/master/&name;.plg">
-<!ENTITY md5 "0f8af25dffa1257a355750ecc0883b7e">
+<!ENTITY md5 "b68b4085c7180b65ab55d14ec6ad3c2f">
 <!ENTITY plugin "/boot/config/plugins/&name;">
 <!ENTITY emhttp "/usr/local/emhttp/plugins/&name;">
 ]>
-<PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" min="6.8.3" support="https://forums.unraid.net/topic/92865-support-ich777-nvidiadvb-kernel-helperbuilder-docker/">
-  <CHANGES>
+<PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" min="6.10.0" support="https://forums.unraid.net/topic/92865-support-ich777-nvidiadvb-kernel-helperbuilder-docker/">
+
+<CHANGES>
+
+###2023.09.13
+- Bumped 'intel_gpu_top' version. Based on Intel-GPU-Tools v1.28
+
+###2023.09.08
+- Bumped 'intel_gpu_top' version to Gitlab master branch (Commit 9d91cf2c) built on 2023.09.08
 
 ###2023.02.15
 - Bumped 'intel_gpu_top' version. Based on Intel-GPU-Tools v1.27.1
@@ -54,26 +61,30 @@
 - Initial release - based on Intel-GPU-Tools 1.25
 
 </CHANGES>
-  <FILE Run="/bin/bash">
-    <INLINE>
+
+<FILE Run="/bin/bash">
+<INLINE>
 rm -f $(ls /boot/config/plugins/&name;/intel.gpu.top*.txz 2&gt;/dev/null|grep -v '&version;')
 </INLINE>
-  </FILE>
-  <FILE Name="/boot/config/plugins/&name;/intel.gpu.top-&version;.txz" Run="upgradepkg --install-new">
-    <URL>&gitURL;/&version;/intel.gpu.top-&version;.txz</URL>
-    <MD5>&md5;</MD5>
-  </FILE>
-  <FILE Name="&emhttp;/README.md">
-    <INLINE>
+</FILE>
+
+<FILE Name="/boot/config/plugins/&name;/intel.gpu.top-&version;.txz" Run="upgradepkg --install-new">
+<URL>&gitURL;/&version;/intel.gpu.top-&version;.txz</URL>
+<MD5>&md5;</MD5>
+</FILE>
+
+<FILE Name="&emhttp;/README.md">
+<INLINE>
 **Intel GPU TOP**
 
 This plugin adds the tool 'intel_gpu_top' to your unRAID server and also enables your Intel iGPU from the installation of this plugin on, so no editis to the 'go' file or creation of other files are necessary.
 To see the usage of your iGPU open up the unRAID Terminal and type in 'intel_gpu_top' (without quotes).
 This plugin satisfies installation prerequisites of the GPU Statistics plugin from Community Apps. With both plugins installed you can display Intel GPU utilization on the unRAID Dashboard.
 </INLINE>
-  </FILE>
-  <FILE Run="/bin/bash">
-    <INLINE>
+</FILE>
+
+<FILE Run="/bin/bash">
+<INLINE>
 
 enableintel() {
 #Enable Intel Kernel module
@@ -127,9 +138,10 @@ echo
 echo "----Installation of Intel GPU TOP complete-----"
 
 </INLINE>
-  </FILE>
-  <FILE Run="/bin/bash" Method="remove">
-    <INLINE>
+</FILE>
+
+<FILE Run="/bin/bash" Method="remove">
+<INLINE>
 
 echo "-----------------------------------------------"
 echo "----------Uninstalling Intel GPU TOP-----------"
@@ -145,5 +157,5 @@ echo "-----------------------------------------------"
 echo
 
 </INLINE>
-  </FILE>
+</FILE>
 </PLUGIN>
