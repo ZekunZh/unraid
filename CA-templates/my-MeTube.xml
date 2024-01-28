@@ -10,9 +10,9 @@
   <Support>https://forums.unraid.net/topic/112776-support-alexb/</Support>
   <Project>https://github.com/alexta69/metube</Project>
   <Overview>Web GUI for youtube-dl (using the yt-dlp fork) with playlist support. Allows you to download videos from YouTube and dozens of other sites (https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md).</Overview>
-  <Category>Downloaders:</Category>
+  <Category></Category>
   <WebUI>http://[IP]:[PORT:8082]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/Zazou49/unraid/master/MeTube.xml</TemplateURL>
+  <TemplateURL></TemplateURL>
   <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/yt-dlp.png</Icon>
   <ExtraParams/>
   <PostArgs/>
