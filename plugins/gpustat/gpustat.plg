@@ -2,9 +2,9 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "gpustat">
 <!ENTITY author    "b3rs3rk">
-<!ENTITY version   "2022.11.30a">
+<!ENTITY version   "2023.12.07">
 <!ENTITY launch    "Settings/GPUStatSettings">
-<!ENTITY gitURL    "https://raw.githubusercontent.com/b3rs3rk/&name;-unraid/master">
+<!ENTITY gitURL    "https://raw.githubusercontent.com/SimonFair/&name;-unraid/master">
 <!ENTITY pluginURL "&gitURL;/&name;.plg">
 <!ENTITY pkgURL    "&gitURL;/pkg">
 <!ENTITY plgPATH   "/boot/config/plugins/&name;">
@@ -27,6 +27,7 @@
   MIT License
 
   Copyright (c) 2020-2022 b3rs3rk
+  Copyright (c) 2023-2023 SimonFair
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
@@ -48,6 +49,57 @@
 -->
 
 <CHANGES>
+###2023-12-07
+
+- Add Intel gpu top timer override value.
+
+###2023-11-09
+
+- Fix VFIO check function.
+
+###2023-10-29d
+
+- Fix passing null to checkVFIO function.
+- Fix Icon issue.
+
+###2023-10-29a
+
+- Allow selection of NVidia GPU is driver not installed.
+- Show Errors if Vendor commands missing or invalid data
+- Add support for codeproject app(chillr21)
+- Add support for Threadfin. 
+- Fix dashboard panel display if minimised.
+
+###2023-10-06
+
+- Show model number if GeForce card.
+
+###2023-09-07
+
+- Fix for new Intel_gpu_top
+
+###2023-06-10
+
+- Fixes for new NVidia Driver. Power draw and Throttling.
+
+###2023-06-09
+
+- Fix location retention issue when moving panels. Note this will reset locations and will need to be move to the required location.
+
+###2023-05-01
+
+- Set default for refresh to 30 seconds for new installs.
+
+###2023-04-12a
+
+- Fix for iGPUs call Display Controller.
+
+###2023-03-27
+- Fix apply for Multilanguage.
+
+###2023-03-21a
+- Fix GPU removal if none selected.
+- Fix Show only GPU if one panel selected rather than GPU1 as title
 
 ###2022-11-30
 - Fix case sensitivity in parent app detection preventing matches

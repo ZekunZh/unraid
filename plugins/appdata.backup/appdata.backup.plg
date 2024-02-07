@@ -2,8 +2,8 @@
 <!DOCTYPE PLUGIN [
         <!ENTITY name      "appdata.backup">
         <!ENTITY author    "Robin Kluth">
-        <!ENTITY version   "2023.06.23">
-        <!ENTITY sha256    "f9d5c1d59889e19b0ee8ab78e882fbeba7b9b5b6f82835698032ecbc624f7b02">
+        <!ENTITY version   "2023.10.16">
+        <!ENTITY sha256    "986203811084ecf4f5ac5dbf6ed26948a4a746e7f403de1b8fa837766eb0fa9e">
         <!ENTITY launch    "Settings/AB.Main">
         <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
         <!ENTITY github    "Commifreak/unraid-appdata.backup">
@@ -16,6 +16,34 @@
     <CHANGES>
         <![CDATA[
         🔨New  🩹Fix 🔧Change
+
+###2023.10.16
+- 🔧 The new success notification is now a setting and can be disabled (default).
+
+###2023.09.27
+- 🔨 The plugin now creates a notice within Unraids notification system after a successful run.
+- 🔨 Show every error during cron checking
+- 🔧 The plugin now calls every post/pre script with at least two arguments (type and current destination path) and a third one (backup result) for the postRun one.
+
+###2023.09.12
+- 🩹 The `Allowed sources` option was not filtered correctly, leading to an issue where all `External volumes` got backed up when they should not.
+- 🩹 If extra file backup contains a symlink, it gets now resolved to its realpath.
+
+###2023.08.28
+- 🩹 Fix docker auto update always showing `no update available`
+
+###2023.08.16
+- 🩹 Booting the system could result in `rm: missing operand`.
+- 🩹 `XML file for was not found` message - caused by deleted container - is fixed
+- 🩹 Docker update would only update one container, if multiple containers using the same image.
+
+###2023.08.15
+- 🩹 Instead of no notifications, a new bug sent too much. Fixed! 😅
+- 🔧 If a container stop-command fails, the plugin now tries again with `docker stop` variant.
+
+###2023.08.14
+- 🩹 Notifications were not sent, if notification level was set to `Errors only`
+- 🔨 `Download (debug) log` were replaced with a `Share log` dialog, which uploads the log to the developer (me)
 
 ###2023.06.23
 - 🩹 PostBackup script was not executed (only if method was `Stop/Backup/Start`)
@@ -102,8 +130,15 @@
 
     <FILE Run="/bin/bash">
         <INLINE>
-            echo "Checking some pre-install things..."
-            rm $(ls /boot/config/plugins/&name;/*.tgz 2>/dev/null | grep -v '&version;')
+            OLDVERS=$(ls /boot/config/plugins/&name;/*.tgz 2>/dev/null | grep -v '&version;')
+            if [ ! -z "$OLDVERS" ]
+            then
+            echo "Cleaning old archives..."
+            rm $OLDVERS
+            else
+            echo "No cleanup of old plugin archive needed!"
+            fi
+
             if [ -d "&plugdir;" ]
             then
             echo "Removing plugin files..."
