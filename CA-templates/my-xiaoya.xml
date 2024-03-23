@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>xiaoya</Name>
+  <Repository>xiaoyaliu/alist:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:5678]</WebUI>
+  <TemplateURL/>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Alist.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1711202953</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5678</Config>
+  <Config Name="2345" Target="2345" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">2345</Config>
+  <Config Name="2346" Target="2346" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">2346</Config>
+  <Config Name="/data" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/xiaoya/</Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+</Container>
