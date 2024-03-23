@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>emby-xiaoya</Name>
+  <Repository>emby/embyserver:4.8.0.56</Repository>
+  <Registry/>
+  <Network>traefik</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>emby &#x5B98;&#x65B9;&#x955C;&#x50CF;&#xFF0C;&#x7528;&#x4E8E; xiaoya&#x3002;</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:6908]</WebUI>
+  <TemplateURL/>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Emby_B.png</Icon>
+  <ExtraParams>--device /dev/dri:/dev/dri --user 0:0 --add-host "xiaoya.host:10.0.0.3"</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1711205436</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="/config" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/xiaoya/config/</Config>
+  <Config Name="/media" Target="/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/xiaoya/</Config>
+  <Config Name="/etc/nsswitch.conf" Target="/etc/nsswitch.conf" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/xiaoya/nsswitch.conf</Config>
+  <Config Name="6908" Target="6908" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">6908</Config>
+  <Config Name="UID" Target="UID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
+  <Config Name="GID" Target="GID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
+  <Config Name="GLIST" Target="GLIST" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">0,18</Config>
+</Container>
