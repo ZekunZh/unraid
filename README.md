@@ -6,4 +6,4 @@
 - 方便安装常用的 Unraid 插件
 - 其他可能会用上的工具
 ## 联系我
-[联系方式](https://www.jackiewu.top/about "联系方式")&emsp;[博客](https://www.jackiewu.top "博客地址")&emsp;[Twitter](https://twitter.com/JackieWuu9527)
+[联系方式](https://www.jackiewu.top/about "联系方式")&emsp;[博客](https://www.jackiewu.top "博客地址")&emsp;
