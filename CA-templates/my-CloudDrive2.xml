@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>CloudDrive2</Name>
-  <Repository>cloudnas/clouddrive2-unstable</Repository>
+  <Repository>cloudnas/clouddrive2:latest</Repository>
   <Registry>https://hub.docker.com/r/cloudnas/clouddrive</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -14,18 +14,19 @@
   <WebUI>http://[IP]:[PORT:19798]</WebUI>
   <TemplateURL/>
   <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Clouddrive.png</Icon>
-  <ExtraParams>--cap-add SYS_ADMIN --device /dev/fuse --security-opt apparmor:unconfined -v /mnt/user/:/CloudNAS:shared</ExtraParams>
+  <ExtraParams>--cap-add SYS_ADMIN --device /dev/fuse --security-opt apparmor:unconfined</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1683532219</DateInstalled>
+  <DateInstalled>1713363766</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="/Config" Target="/Config" Default="/mnt/user/appdata/clouddrive" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/clouddrive</Config>
   <Config Name="WebUI" Target="19798" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">19798</Config>
-  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
-  <Config Name="GUID" Target="GUID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
-  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">000</Config>
+  <Config Name="/CloudNAS" Target="/CloudNAS" Default="" Mode="rw,shared" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/addons/clouddrive</Config>
   <Config Name="CLOUDDRIVE_HOME" Target="CLOUDDRIVE_HOME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/Config</Config>
   <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="/Config" Target="/Config" Default="/mnt/user/appdata/clouddrive" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/clouddrive</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="GUID" Target="GUID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">000</Config>
 </Container>
