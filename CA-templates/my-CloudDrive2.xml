@@ -3,10 +3,10 @@
   <Name>CloudDrive2</Name>
   <Repository>cloudnas/clouddrive2:latest</Repository>
   <Registry>https://hub.docker.com/r/cloudnas/clouddrive</Registry>
-  <Network>bridge</Network>
+  <Network>host</Network>
   <MyIP/>
-  <Shell>bash</Shell>
-  <Privileged>false</Privileged>
+  <Shell>shell</Shell>
+  <Privileged>true</Privileged>
   <Support/>
   <Project/>
   <Overview/>
