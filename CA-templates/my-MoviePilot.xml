@@ -8,31 +8,35 @@
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support/>
-  <Project/>
-  <Overview>MoviePilot&#xD;
-&#x57FA;&#x4E8E; NAStool &#x90E8;&#x5206;&#x4EE3;&#x7801;&#x91CD;&#x65B0;&#x8BBE;&#x8BA1;&#xFF0C;&#x805A;&#x7126;&#x81EA;&#x52A8;&#x5316;&#x6838;&#x5FC3;&#x9700;&#x6C42;&#xFF0C;&#x51CF;&#x5C11;&#x95EE;&#x9898;&#x540C;&#x65F6;&#x66F4;&#x6613;&#x4E8E;&#x6269;&#x5C55;&#x548C;&#x7EF4;&#x62A4;&#x3002;</Overview>
-  <Category/>
-  <WebUI>http://[IP]:[PORT:3003]</WebUI>
+  <Project>https://github.com/jxxghp/MoviePilot?tab=readme-ov-file</Project>
+  <Overview>MoviePilot &#x7684;&#x524D;&#x8EAB;&#x662F; Nastool&#xFF0C;&#x662F;&#x57FA;&#x4E8E; NAStool &#x90E8;&#x5206;&#x4EE3;&#x7801;&#x91CD;&#x65B0;&#x8BBE;&#x8BA1;&#x3001;&#x805A;&#x7126;&#x81EA;&#x52A8;&#x5316;&#x6838;&#x5FC3;&#x9700;&#x6C42;&#x7684;&#x65B0;&#x4E00;&#x4EE3;&#x5F71;&#x97F3;&#x4E0B;&#x8F7D;&#x548C;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#xFF0C;&#x5BF9;&#x6BD4; Nastool &#x6765;&#x8BF4;&#xFF0C;&#x5B83;&#x51CF;&#x5C11;&#x95EE;&#x9898;&#x540C;&#x65F6;&#x66F4;&#x6613;&#x4E8E;&#x6269;&#x5C55;&#x548C;&#x7EF4;&#x62A4;&#x3002;&#xD;
+&#xD;
+&#x672C;&#x6A21;&#x677F;&#x7531; JackieWu &#x6574;&#x7406;&#xFF0C;&#x66F4;&#x591A;&#x5173;&#x4E8E; Unraid &#x7684;&#x6559;&#x7A0B;&#x6B22;&#x8FCE;&#x524D;&#x5F80;&#x535A;&#x5BA2;&#x4E86;&#x89E3;&#xFF1A;www.jackiewu.top &#x3002;</Overview>
+  <Category>HomeAutomation: MediaApp:Video MediaApp:Music MediaApp:Books MediaApp:Photos MediaApp:Other MediaServer:Video MediaServer:Music MediaServer:Books MediaServer:Photos MediaServer:Other Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL/>
   <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/MoviePilot.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1713437871</DateInstalled>
+  <DateInstalled>1728486081</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="&#x7BA1;&#x7406;&#x5458;&#x7528;&#x6237;&#x540D;" Target="SUPERUSER" Default="admin" Mode="" Description="&#x81EA;&#x5B9A;&#x4E49;&#x7BA1;&#x7406;&#x5458;&#x8D26;&#x6237;&#xFF0C;&#x9ED8;&#x8BA4;admin" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="&#x7BA1;&#x7406;&#x5458;&#x5BC6;&#x7801;" Target="SUPERUSER_PASSWORD" Default="password" Mode="" Description="&#x7BA1;&#x7406;&#x5458;&#x767B;&#x9646;&#x5BC6;&#x7801;&#xFF0C;&#x9ED8;&#x8BA4;password" Type="Variable" Display="always" Required="false" Mask="true"></Config>
-  <Config Name="&#x8BA4;&#x8BC1;&#x7AD9;&#x70B9;" Target="AUTH_SITE" Default="" Mode="" Description="&#x8BA4;&#x8BC1;&#x7AD9;&#x70B9;&#xFF0C;&#x652F;&#x6301;hhclub/audiences/hddolby/zmpt/freefarm/hdfans/wintersakura/leaves/1ptba/icc2022/iyuu" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="&#x5BC6;&#x94A5;" Target="IYUU_SIGN" Default="" Mode="" Description="IYUU&#x767B;&#x5F55;&#x4EE4;&#x724C;&#x3002;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x8BA4;&#x8BC1;&#x7AD9;&#x70B9;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF01;&#x53C2;&#x8003;&#x4F5C;&#x8005;Github&#x8BF4;&#x660E;&#13;&#10;" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="&#x603B;&#x76EE;&#x5F55;&#x6620;&#x5C04;" Target="/media" Default="" Mode="rw" Description="&#x6362;&#x6210;&#x81EA;&#x5DF1;&#x7684;&#x76EE;&#x5F55;&#x8DEF;&#x5F84;" Type="Path" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="DOWNLOAD_SUBTITLE" Target="DOWNLOAD_SUBTITLE" Default="" Mode="" Description="&#x81EA;&#x52A8;&#x4E0B;&#x8F7D;&#x7AD9;&#x70B9;&#x5B57;&#x5E55;&#xFF08;&#x5982;&#x6709;&#xFF09;" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
-  <Config Name="AUTO_UPDATE_RESOURCE" Target="AUTO_UPDATE_RESOURCE" Default="" Mode="" Description="&#x81EA;&#x52A8;&#x68C0;&#x67E5;&#x548C;&#x66F4;&#x65B0;&#x7AD9;&#x70B9;&#x8D44;&#x6E90;&#x5305;&#xFF08;&#x7D22;&#x5F15;&#x3001;&#x8BA4;&#x8BC1;&#x7B49;&#xFF09;" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
-  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
-  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
-  <Config Name="UMASK" Target="UMASK" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">002</Config>
+  <Config Name="&#x7BA1;&#x7406;&#x5458;&#x7528;&#x6237;&#x540D;" Target="SUPERUSER" Default="admin" Mode="" Description="&#x81EA;&#x5B9A;&#x4E49;&#x7BA1;&#x7406;&#x5458;&#x8D26;&#x6237;&#xFF0C;&#x9ED8;&#x8BA4;admin" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="&#x7BA1;&#x7406;&#x5458;&#x5BC6;&#x7801;" Target="SUPERUSER_PASSWORD" Default="password" Mode="" Description="&#x7BA1;&#x7406;&#x5458;&#x767B;&#x9646;&#x5BC6;&#x7801;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; password" Type="Variable" Display="always" Required="false" Mask="true">password</Config>
+  <Config Name="&#x8BA4;&#x8BC1;&#x7AD9;&#x70B9;" Target="AUTH_SITE" Default="iyuu|hhclub|audiences|hddolby|zmpt|freefarm|hdfans|wintersakura|leaves|ptba |icc2022|xingtan|ptvicomo|agsvpt|hdkyl|qingwa|discfan|haidan|rousi" Mode="" Description="&#x8BF7;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x7AD9;&#x70B9;&#x8FDB;&#x884C;&#x8BA4;&#x8BC1;&#xFF0C;&#x5426;&#x5219;&#x5C06;&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x4F7F;&#x7528; MoviePilot&#xFF0C;&#x65B0;&#x624B;&#x63A8;&#x8350;&#x4F7F;&#x7528; iyuu" Type="Variable" Display="always" Required="true" Mask="false">iyuu</Config>
+  <Config Name="&#x7AD9;&#x70B9;&#x8BA4;&#x8BC1;&#x53C2;&#x6570;" Target="&#x8BF7;&#x4FEE;&#x6539;&#x8FD9;&#x91CC;&#x7684;&#x53D8;&#x91CF;" Default="" Mode="" Description="&#x914D;&#x7F6E;AUTH_SITE&#x540E;&#xFF0C;&#x9700;&#x8981;&#x6839;&#x636E;&#x4E0B;&#x8868;&#x914D;&#x7F6E;&#x5BF9;&#x5E94;&#x7AD9;&#x70B9;&#x7684;&#x8BA4;&#x8BC1;&#x53C2;&#x6570;&#x3002;" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="&#x5A92;&#x4F53;&#x76EE;&#x5F55;&#x6620;&#x5C04;" Target="/media" Default="" Mode="rw" Description="&#x6362;&#x6210;&#x81EA;&#x5DF1;&#x7684;&#x76EE;&#x5F55;&#x8DEF;&#x5F84;" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media</Config>
+  <Config Name="&#x81EA;&#x52A8;&#x4E0B;&#x8F7D;&#x7AD9;&#x70B9;&#x5B57;&#x5E55;" Target="DOWNLOAD_SUBTITLE" Default="true|false" Mode="" Description="&#x81EA;&#x52A8;&#x4E0B;&#x8F7D;&#x7AD9;&#x70B9;&#x5B57;&#x5E55;&#xFF08;&#x5982;&#x6709;&#xFF09;" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="&#x81EA;&#x52A8;&#x66F4;&#x65B0;" Target="AUTO_UPDATE_RESOURCE" Default="true|false" Mode="" Description="&#x81EA;&#x52A8;&#x68C0;&#x67E5;&#x548C;&#x66F4;&#x65B0;&#x7AD9;&#x70B9;&#x8D44;&#x6E90;&#x5305;&#xFF08;&#x7D22;&#x5F15;&#x3001;&#x8BA4;&#x8BC1;&#x7B49;&#xFF09;" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="Github &#x4EE3;&#x7406;&#x5730;&#x5740;" Target="GITHUB_PROXY" Default="" Mode="" Description="&#x7528;&#x4E8E;&#x52A0;&#x901F;&#x7248;&#x672C;&#x53CA;&#x63D2;&#x4EF6;&#x5347;&#x7EA7;&#x5B89;&#x88C5;" Type="Variable" Display="always" Required="false" Mask="false">https://mirror.ghproxy.com/</Config>
+  <Config Name="DNS over HTTPS &#x5F00;&#x5173;" Target="DOH_ENABLE" Default="true|false" Mode="" Description="&#x5F00;&#x542F;&#x540E;&#x4F1A;&#x4F7F;&#x7528; DOH &#x5BF9;&#x4E0B;&#x9762;&#x8BBE;&#x5B9A;&#x7684;&#x57DF;&#x540D;&#x8FDB;&#x884C;&#x89E3;&#x6790;&#xFF0C;&#x4EE5;&#x51CF;&#x5C11;&#x88AB;DNS&#x6C61;&#x67D3;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x63D0;&#x5347;&#x7F51;&#x7EDC;&#x8FDE;&#x901A;&#x6027;&#x3002;" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="DOH &#x57DF;&#x540D;&#x6E05;&#x5355;" Target="DOH_DOMAINS" Default="" Mode="" Description="&#x591A;&#x4E2A;&#x57DF;&#x540D;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;&#x9017;&#x53F7;&#x8FDB;&#x884C;&#x5206;&#x9694;" Type="Variable" Display="always" Required="false" Mask="false">api.themoviedb.org,api.tmdb.org,webservice.fanart.tv,api.github.com,github.com,raw.githubusercontent.com,api.telegram.org</Config>
+  <Config Name="&#x7528;&#x6237; UID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
+  <Config Name="&#x7EC4; UID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
+  <Config Name="&#x63A9;&#x7801;&#x6743;&#x9650;" Target="UMASK" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">002</Config>
   <Config Name="&#x914D;&#x7F6E;&#x6587;&#x4EF6;" Target="/config" Default="" Mode="rw" Description="&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x8DEF;&#x5F84;&#x6620;&#x5C04;" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/moviepilot/config</Config>
   <Config Name="&#x6D4F;&#x89C8;&#x5668;&#x5185;&#x6838;" Target="/moviepilot" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/moviepilot/browser</Config>
-  <Config Name="WebUI" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">3000</Config>
+  <Config Name="&#x7F51;&#x9875;&#x7AEF;&#x53E3;" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">3000</Config>
 </Container>
