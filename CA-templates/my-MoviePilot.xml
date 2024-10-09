@@ -14,7 +14,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:3003]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/jxxghp/MoviePilot-Frontend/main/public/logo.png</Icon>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/MoviePilot.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
