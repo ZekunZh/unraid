@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>MoviePilot-V2</Name>
-  <Repository>jxxghp/moviepilot:latest</Repository>
+  <Repository>jxxghp/moviepilot-v2:latest</Repository>
   <Registry>https://hub.docker.com/r/jxxghp/moviepilot</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -37,7 +37,7 @@
   <Config Name="&#x7528;&#x6237; UID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
   <Config Name="&#x7EC4; UID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
   <Config Name="&#x63A9;&#x7801;&#x6743;&#x9650;" Target="UMASK" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">002</Config>
-  <Config Name="&#x914D;&#x7F6E;&#x6587;&#x4EF6;" Target="/config" Default="" Mode="rw" Description="&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x8DEF;&#x5F84;&#x6620;&#x5C04;" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/moviepilot/config</Config>
-  <Config Name="&#x6D4F;&#x89C8;&#x5668;&#x5185;&#x6838;" Target="/moviepilot" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/moviepilot/browser</Config>
+  <Config Name="&#x914D;&#x7F6E;&#x6587;&#x4EF6;" Target="/config" Default="" Mode="rw" Description="&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x8DEF;&#x5F84;&#x6620;&#x5C04;" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/moviepilot-v2/config</Config>
+  <Config Name="&#x6D4F;&#x89C8;&#x5668;&#x5185;&#x6838;" Target="/moviepilot" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/moviepilot-v2/browser</Config>
   <Config Name="&#x7F51;&#x9875;&#x7AEF;&#x53E3;" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">3000</Config>
 </Container>
