@@ -19,13 +19,13 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1735051537</DateInstalled>
+  <DateInstalled>1735130970</DateInstalled>
   <DonateText>Donations</DonateText>
   <DonateLink>https://www.linuxserver.io/donate</DonateLink>
   <Requires/>
   <Config Name="&#x7F51;&#x9875;&#x754C;&#x9762; WebUI" Target="8096" Default="8096" Mode="tcp" Description="&#x7F51;&#x9875;&#x754C;&#x9762;&#x7AEF;&#x53E3;" Type="Port" Display="always" Required="true" Mask="false">8096</Config>
   <Config Name="&#x5A92;&#x4F53;&#x5E93;" Target="/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/</Config>
-  <Config Name="&#x6838;&#x663E;&#x52A0;&#x901F;" Target="" Default="" Mode="" Description="" Type="Device" Display="always" Required="false" Mask="false">/dev/dri</Config>
+  <Config Name="&#x6838;&#x663E;&#x52A0;&#x901F;" Target="" Default="" Mode="" Description="&#x7528;&#x4E8E;&#x6DFB;&#x52A0;&#x6838;&#x663E;&#x8BBE;&#x5907;" Type="Device" Display="always" Required="false" Mask="false">/dev/dri</Config>
   <Config Name="&#x914D;&#x7F6E;&#x6587;&#x4EF6;" Target="/config" Default="/mnt/user/appdata/jellyfin" Mode="rw" Description="Jellyfin &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x8DEF;&#x5F84;&#xFF0C;&#x4E00;&#x822C;&#x4FDD;&#x6301;&#x8FD9;&#x91CC;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x5373;&#x53EF;" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/jellyfin</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
