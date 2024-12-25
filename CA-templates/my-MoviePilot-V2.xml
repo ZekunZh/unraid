@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>MoviePilot-V2</Name>
-  <Repository>jxxghp/moviepilot:latest</Repository>
+  <Repository>jxxghp/moviepilot-v2:latest</Repository>
   <Registry>https://hub.docker.com/r/jxxghp/moviepilot</Registry>
   <Network>bridge</Network>
   <MyIP/>
