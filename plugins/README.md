@@ -1,3 +1,3 @@
 ### 用于提供 Unraid 插件国内镜像安装
-由于 Unraid 官方的插件都是发布在 Github 上面，一些朋友因为网络的问题无法直接通过 Unraid 的 APPS 去安装插件，那么就可以通过这里所提供的插件存档进行安装。具体的教程可以查看博主的此篇文章：[《常用插件下载（国内镜像手动安装）》](https://www.jackiewu.top/article/common-unraid-plugin-installation-list "博客文章地址链接")
+由于 Unraid 的插件基本上都是发布在 Github 上面，一些朋友因为网络的问题无法直接通过 Unraid 的 APPS 去安装插件，那么就可以通过这里所提供的插件存档进行安装。具体的教程可以查看博主的此篇文章：[《常用插件下载（国内镜像手动安装）》](https://www.jackiewu.top/article/common-unraid-plugin-installation-list "博客文章地址链接")
 > 另外，由于 Unraid 应用商店（CA）安装的插件都是最新的版本，所以如果读者当前的 Unraid 系统版本比较老（例如 `6.9.2`），那么有可能会出现无法安装的情况（不适配旧版本），此时你也可以通过上面那篇博客文章里面的办法，去选择适合自己当前版本的插件进行下载。
