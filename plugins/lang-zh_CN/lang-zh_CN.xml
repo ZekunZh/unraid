@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Language>
-<LanguageURL>https://github.com/unraid/lang-zh_CN/archive/master.zip</LanguageURL>
+<LanguageURL>https://gitee.com/jackiewuu/unraid/raw/master/plugins/lang-zh_CN/lang-zh_CN-master.zip</LanguageURL>
 <Language>Simplified Chinese</Language>
 <LanguageLocal>简体中文</LanguageLocal>
 <LanguagePack>zh_CN</LanguagePack>
