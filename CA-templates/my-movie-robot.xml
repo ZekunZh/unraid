@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>movie-robot</Name>
+  <Repository>yipengfei/movie-robot</Repository>
+  <Registry>https://hub.docker.com/r/yipengfei/movie-robot/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/yipengfei/movie-robot/</Support>
+  <Project/>
+  <Overview>&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x4ECE;&#x8C46;&#x74E3;&#x7528;&#x6237;&#x7684;&#x60F3;&#x770B;&#x3001;&#x5728;&#x770B;&#x3001;&#x770B;&#x8FC7;&#x5217;&#x8868;&#x4E2D;&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x7535;&#x5F71;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;PT&#x7AD9;&#x667A;&#x80FD;&#x68C0;&#x7D22;&#xFF0C;&#x627E;&#x5230;&#x6700;&#x4F73;&#x8D44;&#x6E90;&#x63D0;&#x4EA4;&#x5230;BT&#x5BA2;&#x6237;&#x7AEF;&#x4E0B;&#x8F7D;&#x3002;&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/yipengfei/movie-robot/</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:1329]</WebUI>
+  <TemplateURL/>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Movierobot_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1683545564</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Config Files" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/movie-robot</Config>
+  <Config Name="WebUI" Target="1329" Default="1329" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">1329</Config>
+  <Config Name="Container Variable 8" Target="LICENSE_KEY" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="yes"/>
+  <Config Name="&#x5F71;&#x97F3;&#x5E93;" Target="/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="UMASK" Target="UMASK" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">000</Config>
+</Container>

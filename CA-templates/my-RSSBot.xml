@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>RSSBot</Name>
+  <Repository>rongronggg9/rss-to-telegram:dev</Repository>
+  <Registry>https://hub.docker.com/r/rongronggg9/rss-to-telegram</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/Rongronggg9/RSS-to-Telegram-Bot</Project>
+  <Overview>Rongronggg9/RSS-to-Telegram-Bot &#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E; Python &#x7F16;&#x5199;&#x7684; RSS &#x8BA2;&#x9605;&#x5DE5;&#x5177;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x5C06; RSS &#x8BA2;&#x9605;&#x6E90;&#x4E2D;&#x7684;&#x66F4;&#x65B0;&#x4FE1;&#x606F;&#x63A8;&#x9001;&#x5230; Telegram Bot &#x4E0A;&#xFF0C;&#x5E2E;&#x52A9;&#x7528;&#x6237;&#x5FEB;&#x901F;&#x83B7;&#x53D6;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x3002;&#xD;
+&#xD;
+&#x66F4;&#x591A; unRAID &#x8D44;&#x6E90;&#x548C;&#x4FE1;&#x606F;&#x8BF7;&#x8054;&#x7CFB;&#x672C;&#x6A21;&#x677F;&#x4F5C;&#x8005;&#xFF1A;JackieWu&#xFF08;&#x5FAE;&#x4FE1;&#xFF1A;jackiewuuu&#xFF09;</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/RSS_to_Telegram.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1683652682</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="config" Target="/app/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/rss_to_telegram_bot/</Config>
+  <Config Name="Telegram Bot Token" Target="TOKEN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="User Id" Target="MANAGER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">1030509993</Config>
+  <Config Name="Telegraph Token" Target="TELEGRAPH_TOKEN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="User-Agent" Target="USER_AGENT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36</Config>
+  <Config Name="TABLE_TO_IMAGE" Target="TABLE_TO_IMAGE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="DEBUG" Target="DEBUG" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+</Container>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>RustDeskServer-AiO</Name>
+  <Repository>ich777/rustdesk-server-aio</Repository>
+  <Registry>https://hub.docker.com/r/ich777/rustdesk-server-aio/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/83786-support-ich777-application-dockers/</Support>
+  <Project>https://rustdesk.com/</Project>
+  <Overview>RustDesk &#x662F;&#x4E00;&#x6B3E;&#x8FDC;&#x7A0B;&#x684C;&#x9762;&#x5F00;&#x6E90;&#x8F6F;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x670D;&#x52A1;&#x7AEF;&#xFF08;HBBS &amp;amp; HBBR&#xFF09;&#x90E8;&#x7F72;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x8FDB;&#x884C;&#x4F7F;&#x7528;&#x3002;&#xD;
+&#xD;
+&#x6B64;&#x5BB9;&#x5668;&#x5305;&#x542B;&#x4E86; RustDesk &#x670D;&#x52A1;&#x7AEF;&#x548C;&#x4E2D;&#x7EE7;&#x670D;&#x52A1;&#x5668;&#x4E24;&#x4E2A;&#x7EC4;&#x4EF6;&#xFF08;All In One&#xFF09;&#xFF0C;&#x65E0;&#x9700;&#x53E6;&#x5916;&#x518D;&#x5B89;&#x88C5;&#x5176;&#x4ED6;&#x7EC4;&#x4EF6;&#x5BB9;&#x5668;&#xFF0C;&#x6781;&#x5927;&#x7684;&#x65B9;&#x4FBF;&#x4E86;&#x7528;&#x6237;&#x7684;&#x90E8;&#x7F72;&#x3002;&#xD;
+&#xD;
+&#x672C; CA &#x6A21;&#x677F;&#x7531; JacckieWu &#x4ECE; Unraid &#x7684; CA &#x5546;&#x5E97;&#x4FEE;&#x6539; RustDeskServer-AiO &#x6A21;&#x677F;&#x800C;&#x6765;&#x3002;&#xD;
+&#xD;
+RustDesk &#x7684;&#x90E8;&#x7F72;&#x6559;&#x7A0B;&#xFF1A;https://www.jackiewu.top/article/RustDesk</Overview>
+  <Category>Network:Other Other: Productivity: Tools:Utilities</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Rustdesk_A.png</Icon>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1691784353</DateInstalled>
+  <DonateText>If you like my work please </DonateText>
+  <DonateLink>https://www.paypal.me/chips777</DonateLink>
+  <Requires/>
+  <Config Name="&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x76EE;&#x5F55;" Target="/rustdesk-server" Default="" Mode="rw" Description="&#x4FDD;&#x5B58;&#x5728; /mnt/user/appdata &#x4E0B;&#x5373;&#x53EF;" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/rustdeskserver-aio</Config>
+  <Config Name="&#x5F00;&#x542F;ID&#x6CE8;&#x518C;&#x670D;&#x52A1;&#x5668;&#xFF08;&#x8BBE;&#x7F6E;&#x4E3A; true &#x5373;&#x53EF;&#xFF09;" Target="HBBS_ENABLED" Default="true|false" Mode="" Description="&#x670D;&#x52A1;&#x7AEF;&#x9700;&#x8981;&#x7528;&#x5230;&#x4EE5;&#x4E0B;&#x7AEF;&#x53E3;&#xFF08;&#x5DF2;&#x7ECF;&#x5728;&#x4E0B;&#x9762;&#x7684;&#x8BBE;&#x7F6E;&#x4E2D;&#x8BBE;&#x7F6E;&#x597D;&#x4E86;&#xFF09;:&#13;&#10;TCP: 21115, 21116, 21118&#13;&#10;UDP: 21116" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
+  <Config Name="ID&#x6CE8;&#x518C;&#x670D;&#x52A1;&#x5668;&#x989D;&#x5916;&#x53C2;&#x6570;" Target="HBBS_PARAMS" Default="" Mode="" Description="RustDesk &#x670D;&#x52A1;&#x7AEF;&#x7684;&#x989D;&#x5916;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x3002;&#x8FD9;&#x91CC;&#x7684;&#x53C2;&#x6570;&#x4F5C;&#x7528;&#x662F;&#x7981;&#x6B62;&#x6CA1;&#x6709; key &#x7684;&#x7528;&#x6237;&#x5EFA;&#x7ACB;&#x975E;&#x52A0;&#x5BC6;&#x8FDE;&#x63A5;&#xFF0C;&#x9632;&#x6B62;&#x88AB;&#x522B;&#x4EBA;&#x533F;&#x540D;&#x4F7F;&#x7528;&#x3002;" Type="Variable" Display="always" Required="false" Mask="false">-r 0.0.0.0:21116 -k _</Config>
+  <Config Name="&#x5F00;&#x542F;&#x4E2D;&#x7EE7;&#x670D;&#x52A1;&#x5668;&#xFF08;&#x8BBE;&#x7F6E;&#x4E3A; true &#x5373;&#x53EF;&#xFF09;" Target="HBBR_ENABLED" Default="true|false" Mode="" Description="&#x4E2D;&#x7EE7;&#x670D;&#x52A1;&#x5668;&#x9700;&#x8981;&#x7528;&#x5230;&#x4EE5;&#x4E0B;&#x7AEF;&#x53E3;&#xFF08;&#x5DF2;&#x7ECF;&#x5728;&#x4E0B;&#x9762;&#x7684;&#x8BBE;&#x7F6E;&#x4E2D;&#x8BBE;&#x7F6E;&#x597D;&#x4E86;&#xFF09;:&#13;&#10;TCP: 21117, 21119" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
+  <Config Name="&#x4E2D;&#x7EE7;&#x670D;&#x52A1;&#x5668;&#x989D;&#x5916;&#x53C2;&#x6570;" Target="HBBR_PARAMS" Default="" Mode="" Description="RustDesk &#x4E2D;&#x7EE7;&#x670D;&#x52A1;&#x5668;&#x7684;&#x989D;&#x5916;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x3002;&#x8FD9;&#x91CC;&#x7684;&#x53C2;&#x6570;&#x4F5C;&#x7528;&#x662F;&#x7981;&#x6B62;&#x6CA1;&#x6709; key &#x7684;&#x7528;&#x6237;&#x5EFA;&#x7ACB;&#x975E;&#x52A0;&#x5BC6;&#x8FDE;&#x63A5;&#xFF0C;&#x9632;&#x6B62;&#x88AB;&#x522B;&#x4EBA;&#x533F;&#x540D;&#x4F7F;&#x7528;&#x3002;" Type="Variable" Display="always" Required="false" Mask="false">-k _</Config>
+  <Config Name="&#x670D;&#x52A1;&#x7AEF; TCP &#x7AEF;&#x53E3;" Target="21115-21119" Default="" Mode="tcp" Description="&#x670D;&#x52A1;&#x7AEF;&#x7528;&#x5230;&#x7684;&#x7AEF;&#x53E3;:&#13;&#10;TCP: 21115, 21116, 21118&#13;&#10;UDP: 21116&#13;&#10;&#x4E2D;&#x7EE7;&#x670D;&#x52A1;&#x5668;&#x7528;&#x5230;&#x7684;&#x7AEF;&#x53E3;:&#13;&#10;TCP: 21117, 21119" Type="Port" Display="always" Required="true" Mask="false">21115-21119</Config>
+  <Config Name="&#x670D;&#x52A1;&#x7AEF; UDP &#x7AEF;&#x53E3;" Target="21116" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="true" Mask="false">21116</Config>
+  <Config Name="UID" Target="UID" Default="" Mode="" Description="&#x7528;&#x6237;&#x6743;&#x9650;&#xFF08;&#x65E0;&#x9700;&#x6539;&#x52A8;&#xFF0C;&#x9664;&#x975E;&#x4F60;&#x77E5;&#x9053;&#x4F60;&#x5728;&#x505A;&#x4EC0;&#x4E48;&#xFF09;" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="GID" Target="GID" Default="" Mode="" Description="&#x7EC4;&#x6743;&#x9650;&#xFF08;&#x65E0;&#x9700;&#x6539;&#x52A8;&#xFF0C;&#x9664;&#x975E;&#x4F60;&#x77E5;&#x9053;&#x4F60;&#x5728;&#x505A;&#x4EC0;&#x4E48;&#xFF09;" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="DATA_PERM" Target="DATA_PERM" Default="" Mode="" Description="&#x65E0;&#x9700;&#x6539;&#x52A8;" Type="Variable" Display="advanced" Required="true" Mask="false">770</Config>
+  <Config Name="UMASK" Target="UMASK" Default="" Mode="" Description="&#x65E0;&#x9700;&#x6539;&#x52A8;" Type="Variable" Display="advanced" Required="true" Mask="false">000</Config>
+</Container>

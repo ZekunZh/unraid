@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Postfix</Name>
+  <Repository>juanluisbaptiste/postfix:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>Simple Postfix SMTP TLS relay docker alpine based image with no local authentication enabled (to be run in a secure LAN).&#xD;
+&#xD;
+CA Template Author: JackieWu ( Blog: jackiewu.top )</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/mailpit.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1694282984</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Mail Port" Target="25" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">25</Config>
+  <Config Name="SMTP_PORT" Target="SMTP_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">465</Config>
+  <Config Name="SMTP_SERVER" Target="SMTP_SERVER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">smtp.gmail.com</Config>
+  <Config Name="SMTP_USERNAME" Target="SMTP_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="SMTP_PASSWORD" Target="SMTP_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="SERVER_HOSTNAME" Target="SERVER_HOSTNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Unraid</Config>
+  <Config Name="SMTP_HEADER_TAG " Target="SMTP_HEADER_TAG " Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Relay-postfix</Config>
+  <Config Name="SMTP_NETWORKS" Target="SMTP_NETWORKS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0.0.0.0/0</Config>
+</Container>

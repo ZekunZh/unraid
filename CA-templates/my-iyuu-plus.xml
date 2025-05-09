@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>iyuu-plus</Name>
+  <Repository>iyuucn/iyuuplus:latest</Repository>
+  <Registry/>
+  <Network>brideg</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/ledccn/IYUUPlus/tree/master/docker</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8787]</WebUI>
+  <TemplateURL/>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Iyuu_B.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1705779624</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="8787" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8787</Config>
+  <Config Name="/IYUU/db" Target="/IYUU/db" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="/BT_backup" Target="/BT_backup" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="/torrents" Target="/torrents" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
+</Container>

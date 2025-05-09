@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>binhex-krusader</Name>
+  <Repository>binhex/arch-krusader</Repository>
+  <Registry>https://registry.hub.docker.com/r/binhex/arch-krusader/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://lime-technology.com/forums/topic/71764-support-binhex-krusader/</Support>
+  <Project>https://krusader.org/</Project>
+  <Overview>&#xD;
+    Krusader is an advanced orthodox file manager for KDE and other desktops in the Unix world. It is similar to the console-based GNU Midnight Commander, GNOME Commander for the GNOME desktop environment, or Total Commander for Windows, all of which can trace their paradigmatic features to the original Norton Commander for DOS. It supports extensive archive handling, mounted filesystem support, FTP, advanced search, viewer/editor, directory synchronisation, file content comparisons, batch renaming, etc.&#xD;
+  </Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:6080]/vnc.html?resize=remote&amp;amp;host=[IP]&amp;amp;port=[PORT:6080]&amp;amp;autoconnect=1</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/krusader.xml</TemplateURL>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/Krusader.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1662995654</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Port 1" Target="6080" Default="6080" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">6080</Config>
+  <Config Name="Key 1" Target="TEMP_FOLDER" Default="/config/home/.config/krusader/tmp" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/config/home/.config/krusader/tmp</Config>
+  <Config Name="Key 2" Target="WEBPAGE_TITLE" Default="Krusader" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Krusader</Config>
+  <Config Name="Key 3" Target="VNC_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Key 4" Target="UMASK" Default="000" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">000</Config>
+  <Config Name="Key 5" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Key 6" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="Shares" Target="/1_Unraid_Shares" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
+  <Config Name="Unassigned Disks" Target="/2_Unraid_Disks" Default="" Mode="rw,slave" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/disks/</Config>
+  <Config Name="Remotes" Target="/3_Unraid_Remotes" Default="" Mode="rw,slave" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/remotes/</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/binhex-krusader" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/binhex-krusader</Config>
+</Container>

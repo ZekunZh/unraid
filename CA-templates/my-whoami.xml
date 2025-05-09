@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>whoami</Name>
+  <Repository>traefik/whoami</Repository>
+  <Registry>https://hub.docker.com/r/traefik/whoami</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/traefik/whoami</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:2001]</WebUI>
+  <TemplateURL/>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/whoami.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1662995717</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WHOAMI_PORT_NUMBER" Target="WHOAMI_PORT_NUMBER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">2001</Config>
+  <Config Name="2001" Target="2001" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">2001</Config>
+</Container>

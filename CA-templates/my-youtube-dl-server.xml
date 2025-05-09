@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>youtube-dl-server</Name>
+  <Repository>kmb32123/youtube-dl-server</Repository>
+  <Registry>https://hub.docker.com/r/kmb32123/youtube-dl-server/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/manbearwiz/youtube-dl-server</Project>
+  <Overview>Web / REST interface for downloading youtube videos onto a server.&#xD;
+&#xD;
+&#xD;
+Enter a video url to download the video to the server. Url can be to YouTube or any other supported site. The server will automatically download the highest quality version available.&#xD;
+&#xD;
+Just navigate to http://{{address}}:{{port}}/youtube-dl and enter the requested {{url}}.&#xD;
+&#xD;
+curl -X POST --data-urlencode "url={{url}}" http://{{address}}:{{port}}/youtube-dl/q&#xD;
+&#xD;
+&#xD;
+/youtube-dl : Downloads go there &#xD;
+</Overview>
+  <Category>Downloaders:</Category>
+  <WebUI>http://[IP]:[PORT:8080]/youtube-dl</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/rroller/unraid-templates/master/ronnieroller.com/youtube-dl-server.xml</TemplateURL>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/youtube-dl-server.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1659972487</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="port" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8181</Config>
+  <Config Name="Download" Target="/youtube-dl" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
+</Container>

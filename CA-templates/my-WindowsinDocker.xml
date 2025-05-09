@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>WindowsinDocker</Name>
+  <Repository>dockurr/windows:latest</Repository>
+  <Registry>https://hub.docker.com/r/dockurr/windows</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/dockur/windows/issues</Support>
+  <Project>https://github.com/dockur/windows</Project>
+  <Overview>&#x5C06; Windows &#x7CFB;&#x7EDF;&#x5B89;&#x88C5;&#x5728; Docker &#x5BB9;&#x5668;&#xFF0C;&#x5177;&#x4F53;&#x6559;&#x7A0B;&#x8BF7;&#x770B;&#xFF1A;https://www.jackiewu.top/article/windows-in-docker&#xD;
+&#xD;
+&#x4F5C;&#x8005; Github &#x9879;&#x76EE;&#x5730;&#x5740;&#xFF1A;https://github.com/dockur/windows&#xD;
+&#xD;
+DockerHub&#xFF1A;https://hub.docker.com/r/dockurr/windows</Overview>
+  <Category>Other: Network:Web Network:Other</Category>
+  <WebUI>http://[IP]:[PORT:8006]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/Joly0/docker-templates/master/templates/windowsindocker.xml</TemplateURL>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/icon/windowsindocker.png</Icon>
+  <ExtraParams>--cap-add=NET_ADMIN --stop-timeout=120</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1705690852</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Version" Target="VERSION" Default="" Mode="" Description="&#x6307;&#x5B9A;&#x9700;&#x8981;&#x4E0B;&#x8F7D;&#x7684; Win &#x7248;&#x672C;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x7684; ISO &#x6765;&#x8FDB;&#x884C;&#x4E0B;&#x8F7D;&#x548C;&#x5B89;&#x88C5;&#xFF0C;&#x5728;&#x4E0B;&#x9762;&#x7684; VERSION &#x53D8;&#x91CF;&#x4E2D;&#x586B;&#x4E0A; ISO &#x6587;&#x4EF6;&#x7684;&#x4E0B;&#x8F7D;&#x5730;&#x5740;&#x5373;&#x53EF;&#x3002;" Type="Variable" Display="always" Required="false" Mask="false">win11</Config>
+  <Config Name="KVM" Target="" Default="" Mode="" Description="KVM &#x865A;&#x62DF;&#x5316;&#x52A0;&#x901F;" Type="Device" Display="always" Required="false" Mask="false">/dev/kvm</Config>
+  <Config Name="WebUI" Target="8006" Default="8006" Mode="tcp" Description="&#x7F51;&#x9875;&#x7AEF;" Type="Port" Display="always" Required="false" Mask="false">8006</Config>
+  <Config Name="RDP" Target="3389" Default="3389" Mode="tcp" Description="Windows &#x8FDC;&#x7A0B;&#x684C;&#x9762;&#x7AEF;&#x53E3;&#xFF08;RDP&#xFF09;" Type="Port" Display="always" Required="false" Mask="false">3389</Config>
+  <Config Name="CPU Cores" Target="CPU_CORES" Default="2" Mode="" Description="CPU &#x6838;&#x5FC3;&#x6570;" Type="Variable" Display="always" Required="false" Mask="false">4</Config>
+  <Config Name="RAM Size" Target="RAM_SIZE" Default="4G" Mode="" Description="&#x5185;&#x5B58;" Type="Variable" Display="always" Required="false" Mask="false">4G</Config>
+  <Config Name="DISK Size" Target="DISK_SIZE" Default="64G" Mode="" Description="&#x786C;&#x76D8;&#x5BB9;&#x91CF;" Type="Variable" Display="always" Required="false" Mask="false">64G</Config>
+  <Config Name="Storage" Target="/storage" Default="" Mode="rw" Description="&#x7ED9;&#x5230; Win &#x6240;&#x4F7F;&#x7528;&#x7684;&#x5B58;&#x50A8;&#x76EE;&#x5F55;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/WinInDocker/</Config>
+  <Config Name="stop_grace_period" Target="stop_grace_period" Default="" Mode="" Description="&#x7B49;&#x5F85; Win &#x7CFB;&#x7EDF;&#x5173;&#x673A;&#x7684;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#xFF08;&#x65F6;&#x95F4;&#x5230;&#x4E86;&#x5373;&#x4F7F; Win &#x6CA1;&#x6709;&#x5B8C;&#x6210;&#x5173;&#x673A; Docker &#x4E5F;&#x4F1A;&#x5F3A;&#x5236;&#x5173;&#x95ED;&#xFF09;&#x3002;" Type="Variable" Display="always" Required="false" Mask="false">2m</Config>
+  <Config Name="MANUAL" Target="MANUAL" Default="Y|N" Mode="" Description="&#x662F;&#x5426;&#x624B;&#x52A8;&#x5B89;&#x88C5;" Type="Variable" Display="always" Required="false" Mask="false">Y</Config>
+  <Config Name="VERSION" Target="VERSION" Default="" Mode="" Description="&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x91CC;&#x586B;&#x5199; http &#x4E0B;&#x8F7D;&#x94FE;&#x63A5;&#xFF0C;&#x6216;&#x8005;&#x4F7F;&#x7528;&#x5DF2;&#x6709;&#x7684; iso &#x7CFB;&#x7EDF;&#x5B89;&#x88C5;&#x955C;&#x50CF;&#x6587;&#x4EF6; cutom.iso &#xFF08;&#x5177;&#x4F53;&#x7EC6;&#x8282;&#x8BF7;&#x67E5;&#x770B;&#x6559;&#x7A0B;&#xFF09;&#x3002;" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="DEVICE" Target="DEVICE" Default="" Mode="" Description="&#x5C06; Unraid &#x4E0A;&#x7684;&#x786C;&#x76D8;&#x5206;&#x533A;&#x7ED9;&#x5230; Docker &#x4F7F;&#x7528;&#xFF0C;&#x4F8B;&#x5982; /dev/disk/by-id/ata-xxx_xxxxx&#xFF0C;&#x4E0D;&#x6E05;&#x695A;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#x7684;&#x4E0D;&#x8981;&#x586B;&#x5199;&#x3002;" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="GPU" Target="GPU" Default="N|Y" Mode="" Description="&#x662F;&#x5426;&#x7ED9;&#x5230;&#x6838;&#x663E;&#x8BA9; Win &#x4F7F;&#x7528;&#xFF08;Y&#xFF1A;Yes&#xFF0C;N&#xFF1A;No&#xFF09;&#xFF0C;&#x76EE;&#x524D;&#x7ED9;&#x5230;&#x5BB9;&#x5668; GPU &#x8FDB;&#x884C;&#x4F7F;&#x7528;&#x4F1A;&#x5B58;&#x5728;&#x4E00;&#x4E9B;&#x95EE;&#x9898;&#xFF0C;&#x4E0D;&#x5EFA;&#x8BAE;&#x5F00;&#x542F;&#xFF0C;&#x5177;&#x4F53;&#x8BF7;&#x53C2;&#x8003;&#x6559;&#x7A0B;&#x8BF4;&#x660E;&#x3002;" Type="Variable" Display="always" Required="false" Mask="false">N</Config>
+  <Config Name="DISK_FMT" Target="DISK_FMT" Default="raw|qcow2" Mode="" Description="Win &#x865A;&#x62DF;&#x673A;&#x7684;&#x865A;&#x62DF;&#x786C;&#x76D8;&#x683C;&#x5F0F;&#xFF0C;&#x53EF;&#x4F7F;&#x7528; raw &#x6216;&#x8005; qcow2&#xFF0C;&#x5982;&#x679C;&#x5728;&#x5B89;&#x88C5;&#x7684;&#x65F6;&#x5019;&#x65E0;&#x6CD5;&#x8FDB;&#x884C;&#x5206;&#x533A;&#xFF0C;&#x8BF7;&#x5220;&#x9664;&#x6240;&#x6709;&#x53C2;&#x4E0E;&#x6587;&#x4EF6;&#x4E4B;&#x540E;&#x5C06;&#x8FD9;&#x91CC;&#x7684;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A; raw &#x518D;&#x4E00;&#x6B21;&#x5C1D;&#x8BD5;&#xFF0C;&#x5176;&#x4ED6;&#x66F4;&#x5177;&#x4F53;&#x7684;&#x8BF4;&#x660E;&#x8BF7;&#x770B;&#x6559;&#x7A0B;&#x3002;" Type="Variable" Display="always" Required="false" Mask="false">raw</Config>
+  <Config Name="ALLOCATE" Target="ALLOCATE" Default="N|Y" Mode="" Description="&#x914D;&#x5408; raw &#x683C;&#x5F0F;&#x4F7F;&#x7528;&#xFF1A;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x4E86; raw &#x683C;&#x5F0F;&#x8BF7;&#x5C06;&#x8FD9;&#x91CC;&#x7684;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A; N &#xFF08;Y&#xFF1A;Yes&#xFF0C;N&#xFF1A;No&#xFF09;&#x3002;" Type="Variable" Display="always" Required="false" Mask="false">N</Config>
+</Container>

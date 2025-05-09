@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>kodbox</Name>
+  <Repository>kodcloud/kodbox</Repository>
+  <Registry>https://hub.docker.com/r/kodcloud/kodbox</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>kodbox is a file manager for web. It is also a web code editor, which allows you to develop websites directly within the web browser.You can run kodbox either online or locally,on Linux, Windows or Mac based platforms. The only requirement is to have PHP 5 available.</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8086]</WebUI>
+  <TemplateURL/>
+  <Icon>https://gitee.com/jackiewuu/unraid/raw/master/docker_templates/Kodbox.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1654783348</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEBUI" Target="80" Default="8086" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8086</Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="KODBOX_ADMIN_USER" Target="KODBOX_ADMIN_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="KODBOX_ADMIN_PASSWORD" Target="KODBOX_ADMIN_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true">admin</Config>
+  <Config Name="/var/www/html" Target="/var/www/html" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/kodbox</Config>
+  <Config Name="/mnt" Target="/mnt" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="GUID" Target="GUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+  <Config Name="SESSION_HOST" Target="SESSION_HOST" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">redis</Config>
+  <Config Name="SESSION_TYPE" Target="SESSION_TYPE" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">redis</Config>
+  <Config Name="SESSION_PORT" Target="SESSION_PORT" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">6379</Config>
+  <Config Name="MYSQL_SERVER" Target="MYSQL_SERVER" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">mariadb</Config>
+  <Config Name="MYSQL_DATABASE" Target="MYSQL_DATABASE" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="MYSQL_USER" Target="MYSQL_USER" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="MYSQL_PASSWORD" Target="MYSQL_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="true"></Config>
+  <Config Name="MYSQL_PORT" Target="MYSQL_PORT" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">3306</Config>
+</Container>
